@@ -422,6 +422,11 @@ function GearScoringEngine.sharedSources()
         local key = kind .. itemID .. ":" .. npcID
         if seenPair[key] then return end
         seenPair[key] = true
+        -- shops of the other faction are left out
+        if kind == "vendors" and type(share.IsOtherSide) == "function" then
+            local okSide, other = pcall(share.IsOtherSide, npcID)
+            if okSide and other then return end
+        end
         local name = nameOf(npcID)
         if not name then return end
         local zone = zoneOf(npcID) or ""
