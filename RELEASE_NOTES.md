@@ -1,9 +1,9 @@
-# v2.0.20
+# v2.0.21
 
 ### 한국어
-- EzWoW 사용자들이 확인한 퀘스트 보상으로 장비의 퀘스트 출처를 표시합니다. 출처를 몰랐던 Forever 신규 장비도 포함됩니다.
-- 공유 기록으로 알게 된 던전 몬스터 정보를 기본 데이터로 넣어, 드롭 출처의 던전 이름이 처음부터 나옵니다.
+- 장비 출처의 판매 상인 목록에서 다른 진영 상인을 뺍니다.
+- 공유 기록에 상점 NPC의 진영과 위치를 함께 남겨, 판매처 목록에서 다른 진영 상인을 뺄 수 있게 했습니다.
 
 ### English
-- Gear now shows quest sources from quest rewards EzWoW users saw, including new Forever gear whose source was unknown.
-- Dungeon monster data from shared records is now built in, so drop sources show their dungeon from the start.
+- Vendors of the other faction are left out of gear sources.
+- Shared records now keep the faction and location of shop NPCs, so vendor lists can leave out the other faction's vendors.
