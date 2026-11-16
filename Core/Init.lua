@@ -748,12 +748,16 @@ function GearScoringEngine.buildSharedTables(D)
     }
 end
 
+-- the bundled tables come with every release (never older): the shared ones only
+-- stand in when they are missing
+function GearScoringEngine.hasBundledData()
+    local own = ns.GearDB
+    return type(own) == "table" and type(own.sources) == "table" and next(own.sources) ~= nil
+end
+
 function GearScoringEngine.useSharedData(D)
     if ns.indexState ~= "idle" then return end
-    -- the bundled tables come with every release (never older): the shared ones only
-    -- stand in when they are missing
-    local own = ns.GearDB
-    if type(own) == "table" and type(own.sources) == "table" and next(own.sources) ~= nil then return end
+    if GearScoringEngine.hasBundledData() then return end
     local isCallOk, shared = pcall(GearScoringEngine.buildSharedTables, D)
     if not isCallOk or type(shared) ~= "table" then return end
     for key, value in pairs(shared) do ns[key] = value end
@@ -761,6 +765,8 @@ function GearScoringEngine.useSharedData(D)
 end
 
 function GearScoringEngine.loadSharedData()
+    -- with the bundled tables the shared module is not loaded at all (memory)
+    if GearScoringEngine.hasBundledData() then return end
     local D = GearScoringEngine.sharedDataAPI()
     if not D then return end
     pcall(D.Load, "Gear", function(_, ok)
