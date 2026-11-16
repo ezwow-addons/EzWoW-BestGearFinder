@@ -877,3 +877,8 @@ end
 CatalogSearchWindow.HandleItemInfoReceived = ns.HandleItemInfoReceived
 CatalogSearchWindow.RebuildCatalogSearchWindow = ns.RebuildCatalogSearchWindow
 CatalogSearchWindow.ToggleCatalogSearchWindow = ns.ToggleCatalogSearchWindow
+
+-- a search is walking the index (Core/Init.lua holds back merging shared sources then)
+function ns:IsCatalogSearchRunning()
+    return searchCo ~= nil
+end

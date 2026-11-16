@@ -323,6 +323,8 @@ function TooltipUpgradeAdvisor.writeEntry(tt, entityID)
         if ns.indexState == "idle" and not (InCombatLockdown and InCombatLockdown()) then ns:EnsureIndex() end
         return
     end
+    -- sources other EzWoW users sent since the index was built (at most once a minute)
+    if ns.MergeStaleSharedSources then ns:MergeStaleSharedSources() end
     local recordItem = ns.index[entityID]
     -- BiS marks need the slots weighed once (also while the window is closed)
     if recordItem and ns.MaybeRankBis then ns:MaybeRankBis() end

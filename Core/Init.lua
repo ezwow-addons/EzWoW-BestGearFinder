@@ -153,6 +153,13 @@ function GearScoringEngine.addSource(rec, inst, boss, minLvl, kind, skill, extra
     extra = extra or {}
     for _, stateFlag in ipairs(rec.src) do
         if stateFlag.kind == kind then
+            -- one shop is one row: its zone may only become known later (a spot
+            -- shared during play), so the same NPC is not added again
+            if kind == "vendor" and extra.creature and stateFlag.creature == extra.creature then
+                if (stateFlag.inst == nil or stateFlag.inst == "") and inst and inst ~= "" then stateFlag.inst = inst end
+                if extra.learned and stateFlag.shared then stateFlag.shared = nil; stateFlag.learned = true end
+                return
+            end
             if (kind == "quest" and stateFlag.qid == extra.qid)
                 or (kind ~= "quest" and stateFlag.inst == inst and stateFlag.boss == boss and stateFlag.creature == extra.creature and stateFlag.map == extra.map) then
                 -- the player now saw a row that came from shared records
@@ -338,12 +345,23 @@ end
 -- EzWoW - Map Finder: { drops = { [itemID] = { {inst, boss, npc} } },
 -- vendors = { [itemID] = { {zone, boss, npc} } } } in the learned format.
 -- Sources without a known name are left out; the zone comes from the map data.
-function GearScoringEngine.sharedSources()
+-- yieldFn (optional): called between the rows, to run in steps inside a coroutine
+-- (never through pcall). Records may arrive between the steps, so the keys of
+-- the tables that change are taken first.
+function GearScoringEngine.sharedSources(yieldFn)
     local share = _G.EzWoW_Share
     if type(share) ~= "table" or type(share.Data) ~= "function" then return nil end
     local okData, data = pcall(share.Data)
     if not okData or type(data) ~= "table" then return nil end
     local seed = type(share.Seed) == "function" and share.Seed or function() return nil end
+    local function step()
+        if yieldFn then yieldFn() end
+    end
+    local function keysOf(t)
+        local list = {}
+        for key in pairs(type(t) == "table" and t or {}) do list[#list + 1] = key end
+        return list
+    end
 
     local zoneCache = {}
     local spawnByNpc, instByCreature
@@ -444,31 +462,38 @@ function GearScoringEngine.sharedSources()
     local function npcOf(src)
         return type(src) == "string" and src:sub(1, 1) == "n" and tonumber(src:sub(2)) or nil
     end
-    for src, items in pairs(type(data.drops) == "table" and data.drops or {}) do
-        local npcID = npcOf(src)
+    local drops = type(data.drops) == "table" and data.drops or {}
+    for _, src in ipairs(keysOf(drops)) do
+        local npcID, items = npcOf(src), drops[src]
         if npcID and type(items) == "table" then
             for itemID in pairs(items) do add("drops", itemID, npcID) end
         end
+        step()
     end
     for src, items in pairs(seed("drops") or {}) do
         local npcID = npcOf(src)
         if npcID and type(items) == "table" then
             for _, itemID in ipairs(items) do add("drops", itemID, npcID) end
         end
+        step()
     end
     local shops = type(share.Store) == "function" and share.Store("M") or {}
-    for npcID, row in pairs(type(shops) == "table" and shops or {}) do
+    shops = type(shops) == "table" and shops or {}
+    for _, npcID in ipairs(keysOf(shops)) do
+        local row = shops[npcID]
         if type(npcID) == "number" and type(row) == "table" then
             for _, itemID in ipairs(type(row.own) == "table" and row.own or {}) do add("vendors", itemID, npcID) end
             for itemID, ok in pairs(type(row.got) == "table" and row.got or {}) do
                 if ok == true then add("vendors", itemID, npcID) end
             end
         end
+        step()
     end
     for npcID, items in pairs(seed("vendors") or {}) do
         if type(npcID) == "number" and type(items) == "table" then
             for _, itemID in ipairs(items) do add("vendors", itemID, npcID) end
         end
+        step()
     end
     -- quest rewards EzWoW users saw (kind "W": this character's, received and shipped)
     local function addReward(itemID, questID, choice)
@@ -491,25 +516,52 @@ function GearScoringEngine.sharedSources()
     end
     if type(share.Store) == "function" and type(share.GetQuestRewards) == "function" then
         local okRows, rows = pcall(share.Store, "W")
-        for questID in pairs(okRows and type(rows) == "table" and rows or {}) do
+        for _, questID in ipairs(keysOf(okRows and rows or nil)) do
             if type(questID) == "number" then
                 local okRw, rw = pcall(share.GetQuestRewards, questID)
                 if okRw and type(rw) == "table" then addRewards(questID, rw.r, rw.c) end
             end
+            step()
         end
     end
     for questID, row in pairs(seed("rewards") or {}) do
         if type(questID) == "number" and type(row) == "table" then addRewards(questID, row.r, row.c) end
+        step()
     end
     return out
 end
 
-function GearScoringEngine.indexForeverExtra()
+-- A new Forever item ("source unknown") that got a real source after the index
+-- was built: it is kept like a full build keeps it (no unknown row, not new)
+function GearScoringEngine.dropUnknownSource(rec)
+    local known = false
+    for _, stateFlag in ipairs(rec.src) do
+        if stateFlag.kind ~= "unknown" then
+            known = true
+            break
+        end
+    end
+    if not known then return end
+    for index = #rec.src, 1, -1 do
+        if rec.src[index].kind == "unknown" then table.remove(rec.src, index) end
+    end
+    rec.kinds.unknown = nil
+    if rec.new then
+        rec.new = nil
+        rec.junk = nil   -- worked out again as for an item with a known source
+        local stateEntry = ns.indexStats
+        if (stateEntry.new or 0) > 0 then stateEntry.new = stateEntry.new - 1 end
+    end
+end
+
+-- sharedOnly: only the given shared sources (records received after the index
+-- was built), added to the built index (see GearScoringEngine.mergeSharedBody)
+function GearScoringEngine.indexForeverExtra(sharedOnly, sharedGiven)
     local qcbit = CLASS_BIT[ns:GetActiveClassToken()]
     local raceID = select(3, UnitRace("player"))
     local qrbit = raceID and 2 ^ (raceID - 1) or nil
     local stateEntry = ns.indexStats
-    stateEntry.extra = 0
+    if not sharedOnly then stateEntry.extra = 0 end
     local entryIndex = ns.index
     local function ensureItemIndexRecord(id)
         local rec = entryIndex[id]
@@ -526,8 +578,9 @@ function GearScoringEngine.indexForeverExtra()
         for id, itemList in pairs(tbl) do
             local rec = ensureItemIndexRecord(id)
             if rec and not (skipKnown and GearScoringEngine.containsKnown(rec)) then
-                stateEntry.extra = stateEntry.extra + 1
+                if not sharedOnly then stateEntry.extra = stateEntry.extra + 1 end
                 for _, e in ipairs(itemList) do fn(rec, e) end
+                if sharedOnly and rec.new then GearScoringEngine.dropUnknownSource(rec) end
             end
             GearScoringEngine.maybeYield()
         end
@@ -549,10 +602,17 @@ function GearScoringEngine.indexForeverExtra()
     end
     local myFaction = (UnitFactionGroup and UnitFactionGroup("player") or ""):lower()   
     local function resolveSideOK(e) return not e.side or e.side == "both" or e.side == myFaction end
-    local okShared, shared = pcall(GearScoringEngine.sharedSources)
-    shared = okShared and shared or nil
+    local shared
+    if sharedOnly then
+        shared = type(sharedGiven) == "table" and sharedGiven or nil
+    else
+        local okShared, result = pcall(GearScoringEngine.sharedSources)
+        shared = okShared and result or nil
+    end
     -- "or false" keeps ipairs going to the shared slot when nothing has been learned yet
-    for _, coordinateHelper in ipairs({ ns.CraftData, ns.ForeverExtra, ns.DungeonData, ns.WorldData, ns.ItemSources, (savedDB and savedDB.learned) or false, shared or false }) do
+    local sourceTables = sharedOnly and { shared or false }
+        or { ns.CraftData, ns.ForeverExtra, ns.DungeonData, ns.WorldData, ns.ItemSources, (savedDB and savedDB.learned) or false, shared or false }
+    for _, coordinateHelper in ipairs(sourceTables) do
         local learned = (savedDB and savedDB.learned and coordinateHelper == savedDB.learned) and true or nil
         -- other players' records: not "seen by you", and not authoritative (see containsKnown)
         local fromShare = (shared and coordinateHelper == shared) and true or nil
@@ -690,6 +750,10 @@ end
 
 function GearScoringEngine.useSharedData(D)
     if ns.indexState ~= "idle" then return end
+    -- the bundled tables come with every release (never older): the shared ones only
+    -- stand in when they are missing
+    local own = ns.GearDB
+    if type(own) == "table" and type(own.sources) == "table" and next(own.sources) ~= nil then return end
     local isCallOk, shared = pcall(GearScoringEngine.buildSharedTables, D)
     if not isCallOk or type(shared) ~= "table" then return end
     for key, value in pairs(shared) do ns[key] = value end
@@ -705,12 +769,84 @@ function GearScoringEngine.loadSharedData()
 end
 
 local indexCo
+
+-----------------------------------------------------------------------------
+-- Records other EzWoW users send during play (drops, shops, quest rewards,
+-- dungeon creatures: Libs/EzWoWShare) mark the shared sources stale. The next
+-- time the index is needed (window, item tooltip) the new ones are added to the
+-- built index in the background: out of combat, at most once a minute, without
+-- building the whole index again (the frame driver below runs it).
+-----------------------------------------------------------------------------
+local SHARED_SOURCE_KINDS = { drops = true, vendors = true, rewards = true, instances = true, M = true, W = true, Z = true }
+local SHARED_MERGE_GAP = 60
+local mergeCo
+local sharedStale, lastSharedMerge, mergeTimer = false, -SHARED_MERGE_GAP, false
+
+function GearScoringEngine.mergeSharedBody()
+    local shared = GearScoringEngine.sharedSources(GearScoringEngine.maybeYield)
+    if type(shared) ~= "table" then return end
+    GearScoringEngine.indexForeverExtra(true, shared)
+end
+
+function ns:MergeStaleSharedSources()
+    if not sharedStale or mergeCo or self.indexState ~= "done" then return end
+    if InCombatLockdown and InCombatLockdown() then return end
+    local now = GetTime()
+    if now - lastSharedMerge < SHARED_MERGE_GAP then return end
+    lastSharedMerge = now
+    sharedStale = false
+    mergeCo = coroutine.create(GearScoringEngine.mergeSharedBody)
+end
+
+-- the open window takes new records without waiting for its next refresh
+function GearScoringEngine.scheduleSharedMerge()
+    if mergeTimer or not (ns.frame and ns.frame:IsShown()) or not (C_Timer and C_Timer.After) then return end
+    mergeTimer = true
+    C_Timer.After(math.max(1, SHARED_MERGE_GAP - (GetTime() - lastSharedMerge)), function()
+        mergeTimer = false
+        if ns.frame and ns.frame:IsShown() then ns:MergeStaleSharedSources() end
+    end)
+end
+
+-- the merge ended (ok: no error)
+function GearScoringEngine.finishSharedMerge(ok, err)
+    if not ok then ns.sharedMergeError = tostring(err) end
+    ns.knownIDs = nil
+    if ns.frame and ns.frame:IsShown() then ns:ScheduleRefresh(0.25) end
+    -- records that came in while it ran
+    if sharedStale then GearScoringEngine.scheduleSharedMerge() end
+end
+
+function GearScoringEngine.onSharedRecords(kinds)
+    if type(kinds) ~= "table" then return end
+    local any = false
+    for kind in pairs(SHARED_SOURCE_KINDS) do
+        if kinds[kind] then
+            any = true
+            break
+        end
+    end
+    if not any then return end
+    sharedStale = true
+    GearScoringEngine.scheduleSharedMerge()
+end
+
+do
+    local share = _G.EzWoW_Share
+    if type(share) == "table" and type(share.RegisterCallback) == "function" then
+        pcall(share.RegisterCallback, "EzWoW-BestGearFinder", GearScoringEngine.onSharedRecords)
+    end
+end
+
 function ns:EnsureIndex()
+    if self.indexState == "done" then self:MergeStaleSharedSources() end
     if self.indexState == "running" or self.indexState == "done" or self.indexState == "empty" then return end
     wipe(self.index)
     self.indexBaseReady = false
     scoreCache = {}
     self.indexState = "running"
+    -- a new index reads every shared record there is now
+    sharedStale, mergeCo = false, nil
     indexCo = coroutine.create(GearScoringEngine.indexBody)
 end
 
@@ -719,6 +855,7 @@ function ns:ResetIndex()
     self.indexState = "idle"
     self.indexBaseReady = false
     indexCo = nil
+    mergeCo = nil
 end
 
 local locToGroups = {}
@@ -2076,7 +2213,18 @@ PulseAnimationDriver:SetScript("OnUpdate", function(_, dt)
             end
         end
     end
-    
+    -- shared sources received during play, added to the built index (pauses in combat)
+    -- (not while a search walks the index: new keys would upset its traversal)
+    if mergeCo and ns.indexState == "done" and not inCombat
+        and not (ns.IsCatalogSearchRunning and ns:IsCatalogSearchRunning()) then
+        budgetStart = debugprofilestop()
+        local isCallOk, errorObj = coroutine.resume(mergeCo)
+        if not isCallOk or coroutine.status(mergeCo) == "dead" then
+            mergeCo = nil
+            GearScoringEngine.finishSharedMerge(isCallOk, errorObj)
+        end
+    end
+
     elapsedAcc = elapsedAcc + dt
     local activeLoad = ns.fastLoad or (ns.frame and ns.frame:IsShown() and (ns.stats.pending or 0) > 0)
     if inCombat and not activeLoad then elapsedAcc = 0 end
@@ -2149,6 +2297,8 @@ eventFrame:SetScript("OnEvent", function(_, event, arg1, arg2)
         ns:ScheduleRefresh(0.3)
     elseif event == "PLAYER_REGEN_ENABLED" then
         if ns.indexState == "idle" or ns.indexState == "empty" then ns:Refresh(true) end
+        -- records that came in during combat, while the window is open
+        if ns.indexState == "done" and ns.frame and ns.frame:IsShown() then ns:MergeStaleSharedSources() end
     end
 end)
 

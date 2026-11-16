@@ -124,6 +124,7 @@ WoW Forever (`Interface: 16001`) · `/ezbg`
 - 모든 EzWoW 애드온이 함께 쓰는 기록 공유가 **기본으로 켜져 있습니다**. 직접 확인한 퀘스트 NPC, 희귀 몬스터 목격, 아이템 드롭, 채집 위치를 다른 EzWoW 사용자와 나눕니다.
 - `/ezshare` 또는 `/공유`: `on` / `off` 켜기·끄기, `channel on` / `channel off` 서버 채널 사용, `status` 현재 상태와 기록 수.
 - 같은 기록을 되풀이해 보내지 않고, 상대에게 없는 기록만 주고받습니다. `/ezshare` 창의 사람 탭에서 상대가 쓰는 공유 버전과 EzWoW 애드온 버전을 볼 수 있습니다.
+- 게임 중에 받은 드롭 · 상점 · 퀘스트 보상 기록은 `/reload` 없이 장비 출처에 더해집니다(창이나 툴팁을 볼 때 1분에 한 번까지, 전투 중에는 끝난 뒤).
 
 ---
 
@@ -239,6 +240,7 @@ Best Gear Finder shows the **best gear you can wear right now** for your class a
 - Record sharing, used by all EzWoW addons, is **on by default**. Quest NPCs, rare monster sightings, item drops and gathering spots you have seen yourself are shared with other EzWoW users.
 - `/ezshare`: `on` / `off` to turn it on or off, `channel on` / `channel off` for the server channel, `status` for the current state and record counts.
 - Records are not sent again and again: players exchange only what the other side does not have yet. The Players tab of the `/ezshare` window shows each player's sharing version and EzWoW addon versions.
+- Drops, shops and quest rewards received during play are added to the gear sources without `/reload` (when the window or a tooltip is shown, at most once a minute, after combat).
 
 ---
 
