@@ -262,7 +262,9 @@ function MainGearAdvisorWindow.buildRow(i)
         if IsModifiedClick("CHATLINK") then
             local ins = ChatEdit_InsertLink or (ChatFrameUtil and ChatFrameUtil.InsertLink)
             if ins then ins(self.link) end
-        elseif IsModifiedClick("DRESSUP") then
+        elseif IsModifiedClick("DRESSUP") and not (ns.GamePad and ns.GamePad.IsActive and ns.GamePad.IsActive()) then
+            -- (not with the gamepad UI on: the game's dressing room opened from addon code
+            -- breaks the game's gamepad navigation, Libs/EzWoWGamePad)
             local dress = DressUpItemLink or (C_Item and C_Item.DressUpItemLink)
             if dress then dress(self.link) end
         end

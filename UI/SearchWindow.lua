@@ -190,6 +190,9 @@ function CatalogSearchWindow.resolveRow(i)
         end
         local insertLink = ChatEdit_InsertLink or (ChatFrameUtil and ChatFrameUtil.InsertLink)
         local dressUp = DressUpItemLink or (C_Item and C_Item.DressUpItemLink)
+        -- (not with the gamepad UI on: the game's dressing room opened from addon code
+        -- breaks the game's gamepad navigation, Libs/EzWoWGamePad)
+        if ns.GamePad and ns.GamePad.IsActive and ns.GamePad.IsActive() then dressUp = nil end
         if IsShiftKeyDown() and insertLink then insertLink(self.link)
         elseif IsControlKeyDown() and dressUp then dressUp(self.link) end
     end)
