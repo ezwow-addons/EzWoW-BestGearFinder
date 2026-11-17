@@ -222,8 +222,14 @@ function ns:IsAddOnLoadedSafe(name)
     local ok, loadedOrLoading, loaded = pcall(isLoaded, name)
     return ok and (loadedOrLoading or loaded) and true or false
 end
+-- (an older EzWoW - Tooltip without the option leaves the comparison to these rows)
+function ns:EquipCompareOwned()
+    if not ns:IsAddOnLoadedSafe(ns.EQUIP_COMPARE_OWNER) then return false end
+    local tip = _G.EzWoW_Tooltip
+    return type(tip) == "table" and type(tip.SyncEquipCompare) == "function"
+end
 function ns:ShowRowComparison(tt)
-    if ns:IsAddOnLoadedSafe(ns.EQUIP_COMPARE_OWNER) then return end
+    if ns:EquipCompareOwned() then return end
     if (ns.db and ns.db.showEquipCompare ~= false) or (IsShiftKeyDown and IsShiftKeyDown()) then
         if GameTooltip_ShowCompareItem then pcall(GameTooltip_ShowCompareItem, tt or GameTooltip) end
     end

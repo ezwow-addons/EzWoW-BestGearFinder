@@ -367,7 +367,8 @@ function SettingsDialog.buildConfigWindow()
         for _, themeColor in ipairs(cfgChecks) do
             local checked = ns.db[themeColor.key] and true or false
             local owner = MANAGED_BY[themeColor.key]
-            if owner and ns:IsAddOnLoadedSafe(owner.addon) then
+            -- (an older owner without the option leaves it here)
+            if owner and ns:IsAddOnLoadedSafe(owner.addon) and (owner.addon ~= ns.EQUIP_COMPARE_OWNER or ns:EquipCompareOwned()) then
                 -- the option lives in the owner addon now: show its value, change it there
                 local ok, ownerValue = pcall(owner.read)
                 if ok and ownerValue ~= nil then checked = ownerValue and true or false end
