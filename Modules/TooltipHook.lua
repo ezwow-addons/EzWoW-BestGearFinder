@@ -3,6 +3,14 @@
 -- Modules/TooltipHook.lua : Item Tooltip Stat Upgrade & Drop Source Hook
 --===========================================================================
 local ADDON, ns = ...
+-- every EzWoW line on the game's tooltips can be turned off at once (Game Menu >
+-- Options > AddOns > EzWoW - Data Sharing; Libs/EzWoWShare TooltipLinesOn)
+local function ezTipsOn()
+    local share = _G.EzWoW_Share
+    if type(share) ~= "table" or type(share.TooltipLinesOn) ~= "function" then return true end
+    local ok, on = pcall(share.TooltipLinesOn)
+    return not ok or on ~= false
+end
 
 -- The "EzWoW - ..." name line at the end of tooltip additions is drawn small.
 -- Shared by the EzWoW addons: the first one loaded sets it up.
@@ -222,7 +230,7 @@ function ns:ShowRowComparison(tt)
 end
 
 function TooltipUpgradeAdvisor.tooltipWanted(tt)
-    if not ns.db or ns.db.itemTooltip == false then return false end
+    if not ns.db or ns.db.itemTooltip == false or not ezTipsOn() then return false end
     if not TooltipUpgradeAdvisor.isAllowedTooltip(tt) then return false end
     if tt == GameTooltip then
         if ns.tipSuppressed then return false end

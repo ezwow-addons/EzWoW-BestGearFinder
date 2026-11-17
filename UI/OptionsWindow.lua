@@ -43,6 +43,8 @@ local MANAGED_BY = {
 function SettingsDialog.buildConfigWindow()
     if ns.GetConfigFrame() then return ns.GetConfigFrame() end
     local windowFrame = CreateFrame("Frame", "EzWoWBestGearFinderConfig", UIParent, BackdropTemplateMixin and "BackdropTemplate" or nil)
+    -- (taller than the screen: shrunk to fit, Libs/EzWoWGamePad)
+    if ns.GamePad and ns.GamePad.KeepOnScreen then ns.GamePad.KeepOnScreen(windowFrame) end
     windowFrame:SetSize(460, 536)
     local savedPoint = ns.db and ns.db.cfgPoint
     if type(savedPoint) == "table" and type(savedPoint[1]) == "string" then
