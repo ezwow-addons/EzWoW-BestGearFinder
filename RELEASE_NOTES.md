@@ -1,7 +1,3 @@
-# v2.0.28
+# v2.0.29
 
-### 한국어
-- 예전 버전의 EzWoW - Tooltip과 함께 쓸 때 Shift 없이 장비 비교가 안 되던 문제를 고쳤습니다.
-
-### English
-- Fixed comparing with equipped gear without Shift when used with an older EzWoW - Tooltip.
+- 정식 서버에 맞게 표시 내용을 갱신했습니다. / Updated displayed text for the live realm.
