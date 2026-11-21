@@ -414,7 +414,7 @@ ns.GearDB = {
         },
         [1640] = {
             {inst="울다만", boss="상자: Ancient Treasure 외 21", minLvl=38, chance=3.5, creature=-141979, map=70, n=22},
-            {inst="가시덩굴 구릉", boss="Lady Falther'ess 외 1", minLvl=38, chance=0.007, creature=14686, map=129, n=2},
+            {inst="가시덩굴 구릉", boss="Skeletal Summoner 외 2", minLvl=38, creature=7342, map=129, n=3},
             {inst="붉은십자군 수도원", boss="Scarlet Wizard 외 3", minLvl=38, chance=0.006, creature=4300, map=189, n=4},
             {inst="줄파락", boss="Sandfury Shadowcaster", minLvl=43, chance=0.006, creature=5648, map=209, n=1},
             {inst="마라우돈", boss="Putridus Satyr 외 8", minLvl=42, chance=0.015, creature=11790, map=349, n=9},
@@ -889,7 +889,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Son of Arugal 외 26", minLvl=18, chance=0.023, creature=2529, map=33, n=27},
         },
         [2815] = {
-            {inst="울다만", boss="Shadowforge Darkcaster 외 4", minLvl=42, chance=0.003, creature=4848, map=70, n=5},
+            {inst="울다만", boss="Earthen Stonecarver 외 5", minLvl=42, creature=7397, map=70, n=6},
             {inst="가라앉은 사원", boss="Atal'ai Warrior 외 6", minLvl=45, chance=0.003, creature=5256, map=109, n=7},
             {inst="줄파락", boss="Sandarr Dunereaver 외 22", minLvl=43, chance=0.004, creature=10080, map=209, n=23},
             {inst="마라우돈", boss="Deeprot Tangler 외 24", minLvl=42, chance=0.004, creature=13142, map=349, n=25},
@@ -904,6 +904,7 @@ ns.GearDB = {
             {inst="검은심연의 나락", boss="Baron Aquanis 외 8", minLvl=24, chance=0.01, creature=12876, map=48, n=9},
             {inst="놈리건", boss="Mobile Alert System 외 16", minLvl=25, chance=0.011, creature=7849, map=90, n=17},
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
+            {inst="발굴 현장: 저습지", boss="Highland Horror", minLvl=26, creature=260808, map=2998, n=1},
         },
         [2824] = {
             {inst="가라앉은 사원", boss="Ogom the Wretched 외 14", minLvl=49, chance=0.002, creature=5711, map=109, n=15},
@@ -1188,7 +1189,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [3057] = {
-            {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
+            {inst="그림자송곳니 성채", boss="Shadowfang Ragetooth 외 8", minLvl=20, creature=3859, map=33, n=9},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
             {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
@@ -1198,7 +1199,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [3058] = {
-            {inst="그림자송곳니 성채", boss="Wailing Guardsman 외 5", minLvl=21, chance=0.011, creature=3877, map=33, n=6},
+            {inst="그림자송곳니 성채", boss="Lupine Horror 외 6", minLvl=21, creature=3863, map=33, n=7},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 7", minLvl=23, chance=0.011, creature=1696, map=34, n=8},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 8", minLvl=24, chance=0.011, creature=4520, map=47, n=9},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 21", minLvl=22, chance=0.014, creature=4815, map=48, n=22},
@@ -1214,7 +1215,7 @@ ns.GearDB = {
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 16", minLvl=22, chance=0.014, creature=4815, map=48, n=17},
         },
         [3066] = {
-            {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
+            {inst="그림자송곳니 성채", boss="Baron Silverlaine 외 9", minLvl=20, creature=3887, map=33, n=10},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
             {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
@@ -1314,7 +1315,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Fel Steed 외 11", minLvl=19, chance=0.045, creature=3864, map=33, n=12},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 4", minLvl=23, chance=0.011, creature=1696, map=34, n=5},
             {inst="죽음의 폐광", boss="Edwin VanCleef 외 5", minLvl=19, chance=0.02, creature=639, map=36, n=6},
-            {inst="통곡의 동굴", boss="Deviate Viper 외 3", minLvl=19, chance=0.011, creature=5755, map=43, n=4},
+            {inst="통곡의 동굴", boss="Druid of the Fang 외 4", minLvl=19, creature=3840, map=43, n=5},
             {inst="가시덩굴 우리", boss="Razorfen Warrior 외 1", minLvl=24, chance=0.009, creature=4435, map=47, n=2},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 16", minLvl=22, chance=0.014, creature=4815, map=48, n=17},
         },
@@ -1329,12 +1330,12 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Sever 외 1", minLvl=24, chance=0.011, creature=14682, map=33, n=2},
             {inst="스톰윈드 지하감옥", boss="Hamhock 외 6", minLvl=24, chance=0.011, creature=1717, map=34, n=7},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 21", minLvl=24, chance=0.011, creature=4520, map=47, n=22},
-            {inst="검은심연의 나락", boss="Baron Aquanis 외 8", minLvl=24, chance=0.01, creature=12876, map=48, n=9},
+            {inst="검은심연의 나락", boss="Barbed Crustacean 외 9", minLvl=24, creature=4823, map=48, n=10},
             {inst="놈리건", boss="Mobile Alert System 외 16", minLvl=25, chance=0.011, creature=7849, map=90, n=17},
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [3202] = {
-            {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
+            {inst="그림자송곳니 성채", boss="Shadowfang Ragetooth 외 9", minLvl=20, creature=3859, map=33, n=10},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
             {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
@@ -1829,7 +1830,7 @@ ns.GearDB = {
         [4078] = {
             {inst="울다만", boss="Shrike Bat 외 21", minLvl=35, chance=0.016, creature=4861, map=70, n=22},
             {inst="가시덩굴 구릉", boss="Withered Reaver 외 13", minLvl=35, chance=0.018, creature=7328, map=129, n=14},
-            {inst="붉은십자군 수도원", boss="Scarlet Chaplain 외 13", minLvl=34, chance=0.018, creature=4299, map=189, n=14},
+            {inst="붉은십자군 수도원", boss="Herod 외 14", minLvl=34, creature=3975, map=189, n=15},
         },
         [4079] = {
             {inst="울다만", boss="Shrike Bat 외 20", minLvl=36, chance=0.016, creature=4861, map=70, n=21},
@@ -1910,7 +1911,7 @@ ns.GearDB = {
         [4568] = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 15", minLvl=17, chance=0.069, creature=644, map=36, n=16},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 11", minLvl=17, chance=0.045, creature=3636, map=43, n=12},
+            {inst="통곡의 동굴", boss="Kresh 외 12", minLvl=17, creature=3653, map=43, n=13},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 4", minLvl=22, chance=0.014, creature=4815, map=48, n=5},
         },
         [4569] = {
@@ -2256,7 +2257,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Scarlet Guardsman 외 9", minLvl=36, chance=0.018, creature=4290, map=189, n=10},
         },
         [5069] = {
-            {inst="성난불길 협곡", boss="Earthborer", minLvl=13, chance=0.08, creature=11320, map=389, n=1},
+            {inst="성난불길 협곡", boss="Searing Blade Warlock 외 1", minLvl=13, creature=11324, map=389, n=2},
         },
         [5071] = {
             {inst="성난불길 협곡", boss="Earthborer 외 6", minLvl=13, chance=0.08, creature=11320, map=389, n=7},
@@ -2746,7 +2747,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 23", minLvl=42, chance=0.015, creature=12220, map=349, n=24},
         },
         [6431] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 11", minLvl=39, chance=1.2, creature=-141979, map=70, n=12},
+            {inst="울다만", boss="Earthen Stonebreaker 외 12", minLvl=39, creature=7396, map=70, n=13},
             {inst="가시덩굴 구릉", boss="Lady Falther'ess", minLvl=40, chance=0.007, creature=14686, map=129, n=1},
             {inst="붉은십자군 수도원", boss="Scarlet Champion 외 1", minLvl=39, chance=0.006, creature=4302, map=189, n=2},
             {inst="줄파락", boss="Sandfury Witch Doctor 외 5", minLvl=43, chance=0.015, creature=5650, map=209, n=6},
@@ -2943,7 +2944,7 @@ ns.GearDB = {
         [6562] = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 15", minLvl=17, chance=0.069, creature=644, map=36, n=16},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 11", minLvl=17, chance=0.045, creature=3636, map=43, n=12},
+            {inst="통곡의 동굴", boss="Mutanus the Devourer 외 12", minLvl=17, creature=3654, map=43, n=13},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 4", minLvl=22, chance=0.014, creature=4815, map=48, n=5},
         },
         [6563] = {
@@ -2954,14 +2955,14 @@ ns.GearDB = {
         [6564] = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 15", minLvl=17, chance=0.069, creature=644, map=36, n=16},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 11", minLvl=17, chance=0.045, creature=3636, map=43, n=12},
+            {inst="통곡의 동굴", boss="Mutanus the Devourer 외 12", minLvl=17, creature=3654, map=43, n=13},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 4", minLvl=22, chance=0.014, creature=4815, map=48, n=5},
         },
         [6565] = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="스톰윈드 지하감옥", boss="Defias Prisoner 외 1", minLvl=23, chance=0.01, creature=1706, map=34, n=2},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 12", minLvl=18, chance=0.069, creature=644, map=36, n=13},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 10", minLvl=18, chance=0.045, creature=3636, map=43, n=11},
+            {inst="통곡의 동굴", boss="Mutanus the Devourer 외 11", minLvl=18, creature=3654, map=43, n=12},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 11", minLvl=22, chance=0.014, creature=4815, map=48, n=12},
         },
         [6567] = {
@@ -3024,7 +3025,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="스톰윈드 지하감옥", boss="Defias Prisoner 외 1", minLvl=23, chance=0.01, creature=1706, map=34, n=2},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 12", minLvl=18, chance=0.069, creature=644, map=36, n=13},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 10", minLvl=18, chance=0.045, creature=3636, map=43, n=11},
+            {inst="통곡의 동굴", boss="Mutanus the Devourer 외 11", minLvl=18, creature=3654, map=43, n=12},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 11", minLvl=22, chance=0.014, creature=4815, map=48, n=12},
         },
         [6575] = {
@@ -3036,7 +3037,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="스톰윈드 지하감옥", boss="Defias Prisoner 외 1", minLvl=23, chance=0.01, creature=1706, map=34, n=2},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 12", minLvl=18, chance=0.069, creature=644, map=36, n=13},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 10", minLvl=18, chance=0.045, creature=3636, map=43, n=11},
+            {inst="통곡의 동굴", boss="Mutanus the Devourer 외 11", minLvl=18, creature=3654, map=43, n=12},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 11", minLvl=22, chance=0.014, creature=4815, map=48, n=12},
         },
         [6577] = {
@@ -3107,7 +3108,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
-            {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
+            {inst="통곡의 동굴", boss="Mutanus the Devourer 외 2", minLvl=20, creature=3654, map=43, n=3},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 6", minLvl=24, chance=0.011, creature=4520, map=47, n=7},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 18", minLvl=22, chance=0.014, creature=4815, map=48, n=19},
             {inst="놈리건", boss="Mobile Alert System 외 1", minLvl=25, chance=0.011, creature=7849, map=90, n=2},
@@ -3222,7 +3223,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Scarlet Trainee 외 6", minLvl=30, chance=0.009, creature=6575, map=189, n=7},
         },
         [6604] = {
-            {inst="그림자송곳니 성채", boss="Sever 외 4", minLvl=22, chance=0.011, creature=14682, map=33, n=5},
+            {inst="그림자송곳니 성채", boss="Wolf Master Nandos 외 5", minLvl=22, creature=3927, map=33, n=6},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 11", minLvl=24, chance=0.011, creature=4520, map=47, n=12},
             {inst="검은심연의 나락", boss="Blindlight Muckdweller 외 18", minLvl=22, chance=0.013, creature=4819, map=48, n=19},
@@ -3969,7 +3970,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 14", minLvl=42, chance=0.015, creature=12220, map=349, n=15},
         },
         [7487] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 11", minLvl=39, chance=1.2, creature=-141979, map=70, n=12},
+            {inst="울다만", boss="Stonevault Mauler 외 12", minLvl=39, creature=7320, map=70, n=13},
             {inst="가시덩굴 구릉", boss="Lady Falther'ess", minLvl=40, chance=0.007, creature=14686, map=129, n=1},
             {inst="붉은십자군 수도원", boss="Scarlet Champion 외 1", minLvl=39, chance=0.006, creature=4302, map=189, n=2},
             {inst="줄파락", boss="Sandfury Witch Doctor 외 5", minLvl=43, chance=0.015, creature=5650, map=209, n=6},
@@ -4025,7 +4026,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 14", minLvl=42, chance=0.015, creature=12220, map=349, n=15},
         },
         [7496] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 11", minLvl=39, chance=0.8, creature=-141979, map=70, n=12},
+            {inst="울다만", boss="Stone Steward 외 12", minLvl=39, creature=4860, map=70, n=13},
             {inst="가시덩굴 구릉", boss="Lady Falther'ess", minLvl=40, chance=0.007, creature=14686, map=129, n=1},
             {inst="붉은십자군 수도원", boss="Scarlet Champion 외 1", minLvl=39, chance=0.006, creature=4302, map=189, n=2},
             {inst="줄파락", boss="Sandfury Witch Doctor 외 5", minLvl=43, chance=0.015, creature=5650, map=209, n=6},
@@ -4056,7 +4057,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 18", minLvl=43, chance=0.015, creature=12220, map=349, n=19},
         },
         [7521] = {
-            {inst="울다만", boss="Earthen Custodian 외 4", minLvl=42, chance=0.006, creature=7309, map=70, n=5},
+            {inst="울다만", boss="Stone Keeper 외 5", minLvl=42, creature=4857, map=70, n=6},
             {inst="가라앉은 사원", boss="Slime Maggot 외 3", minLvl=45, chance=0.006, creature=8311, map=109, n=4},
             {inst="줄파락", boss="Sandarr Dunereaver 외 22", minLvl=43, chance=0.288, creature=10080, map=209, n=23},
             {inst="마라우돈", boss="Constrictor Vine 외 23", minLvl=42, chance=0.015, creature=12220, map=349, n=24},
@@ -5018,7 +5019,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 18", minLvl=43, chance=0.015, creature=12220, map=349, n=19},
         },
         [8277] = {
-            {inst="울다만", boss="Earthen Custodian 외 4", minLvl=42, chance=0.006, creature=7309, map=70, n=5},
+            {inst="울다만", boss="Stone Steward 외 5", minLvl=42, creature=4860, map=70, n=6},
             {inst="가라앉은 사원", boss="Slime Maggot 외 3", minLvl=45, chance=0.006, creature=8311, map=109, n=4},
             {inst="줄파락", boss="Sandarr Dunereaver 외 22", minLvl=43, chance=0.288, creature=10080, map=209, n=23},
             {inst="마라우돈", boss="Constrictor Vine 외 23", minLvl=42, chance=0.015, creature=12220, map=349, n=24},
@@ -5789,7 +5790,7 @@ ns.GearDB = {
             {inst="줄파락", boss="Chief Ukorz Sandscalp", minLvl=48, chance=20, creature=7267, map=209, n=1},
         },
         [9479] = {
-            {inst="줄파락", boss="Chief Ukorz Sandscalp", minLvl=48, chance=20, creature=7267, map=209, n=1},
+            {inst="줄파락", boss="Ruuzlu 외 1", minLvl=46, creature=7797, map=209, n=2},
         },
         [9480] = {
             {inst="줄파락", boss="Zerillis 외 14", minLvl=44, chance=0.023, creature=10082, map=209, n=15},
@@ -5992,7 +5993,7 @@ ns.GearDB = {
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 11", minLvl=22, chance=0.014, creature=4815, map=48, n=12},
         },
         [9782] = {
-            {inst="그림자송곳니 성채", boss="Fel Steed 외 11", minLvl=19, chance=0.045, creature=3864, map=33, n=12},
+            {inst="그림자송곳니 성채", boss="Commander Springvale 외 12", minLvl=19, creature=4278, map=33, n=13},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 4", minLvl=23, chance=0.011, creature=1696, map=34, n=5},
             {inst="죽음의 폐광", boss="Edwin VanCleef 외 5", minLvl=19, chance=0.02, creature=639, map=36, n=6},
             {inst="통곡의 동굴", boss="Deviate Viper 외 3", minLvl=19, chance=0.011, creature=5755, map=43, n=4},
@@ -6053,7 +6054,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Scarlet Trainee 외 4", minLvl=30, chance=0.009, creature=6575, map=189, n=5},
         },
         [9792] = {
-            {inst="그림자송곳니 성채", boss="Wailing Guardsman 외 5", minLvl=21, chance=0.011, creature=3877, map=33, n=6},
+            {inst="그림자송곳니 성채", boss="Razorclaw the Butcher 외 6", minLvl=21, creature=3886, map=33, n=7},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 7", minLvl=23, chance=0.011, creature=1696, map=34, n=8},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 8", minLvl=24, chance=0.011, creature=4520, map=47, n=9},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 21", minLvl=22, chance=0.014, creature=4815, map=48, n=22},
@@ -6061,7 +6062,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [9793] = {
-            {inst="그림자송곳니 성채", boss="Wailing Guardsman 외 5", minLvl=21, chance=0.011, creature=3877, map=33, n=6},
+            {inst="그림자송곳니 성채", boss="Odo the Blindwatcher 외 6", minLvl=21, creature=4279, map=33, n=7},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 7", minLvl=23, chance=0.011, creature=1696, map=34, n=8},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 8", minLvl=24, chance=0.011, creature=4520, map=47, n=9},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 21", minLvl=22, chance=0.014, creature=4815, map=48, n=22},
@@ -6077,7 +6078,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [9795] = {
-            {inst="그림자송곳니 성채", boss="Sever 외 4", minLvl=22, chance=0.011, creature=14682, map=33, n=5},
+            {inst="그림자송곳니 성채", boss="Archmage Arugal 외 5", minLvl=22, creature=4275, map=33, n=6},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 11", minLvl=24, chance=0.011, creature=4520, map=47, n=12},
             {inst="검은심연의 나락", boss="Blindlight Muckdweller 외 18", minLvl=22, chance=0.013, creature=4819, map=48, n=19},
@@ -6085,7 +6086,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [9796] = {
-            {inst="그림자송곳니 성채", boss="Sever 외 3", minLvl=23, chance=0.011, creature=14682, map=33, n=4},
+            {inst="그림자송곳니 성채", boss="Shadowfang Ragetooth 외 4", minLvl=23, creature=3859, map=33, n=5},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 18", minLvl=24, chance=0.011, creature=4520, map=47, n=19},
             {inst="검은심연의 나락", boss="Old Serra'kis 외 14", minLvl=23, chance=0.011, creature=4830, map=48, n=15},
@@ -6205,7 +6206,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [9811] = {
-            {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
+            {inst="그림자송곳니 성채", boss="Shadowfang Ragetooth 외 10", minLvl=20, creature=3859, map=33, n=11},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
             {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
@@ -6215,7 +6216,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [9812] = {
-            {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
+            {inst="그림자송곳니 성채", boss="Rethilgore 외 17", minLvl=18, creature=3914, map=33, n=18},
             {inst="스톰윈드 지하감옥", boss="Defias Prisoner 외 1", minLvl=23, chance=0.01, creature=1706, map=34, n=2},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 12", minLvl=18, chance=0.069, creature=644, map=36, n=13},
             {inst="통곡의 동굴", boss="Deviate Ravager 외 10", minLvl=18, chance=0.045, creature=3636, map=43, n=11},
@@ -6564,7 +6565,7 @@ ns.GearDB = {
             {inst="울다만", boss="Stonevault Ambusher 외 4", minLvl=35, chance=0.009, creature=7175, map=70, n=5},
             {inst="놈리건", boss="Mekgineer Thermaplugg 외 3", minLvl=32, chance=0.433, creature=7800, map=90, n=4},
             {inst="가시덩굴 구릉", boss="Withered Reaver 외 15", minLvl=34, chance=0.018, creature=7328, map=129, n=16},
-            {inst="붉은십자군 수도원", boss="Scarlet Tracking Hound 외 15", minLvl=33, chance=0.022, creature=4304, map=189, n=16},
+            {inst="붉은십자군 수도원", boss="Houndmaster Loksey 외 16", minLvl=33, creature=3974, map=189, n=17},
         },
         [9865] = {
             {inst="가시덩굴 우리", boss="Ward Guardian 외 5", minLvl=30, chance=0.009, creature=4427, map=47, n=6},
@@ -6804,13 +6805,13 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 17", minLvl=44, chance=0.015, creature=12220, map=349, n=18},
         },
         [9906] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 7", minLvl=40, chance=1.5, creature=-141979, map=70, n=8},
+            {inst="울다만", boss="Stonevault Brawler 외 8", minLvl=40, creature=4855, map=70, n=9},
             {inst="가라앉은 사원", boss="Slime Maggot", minLvl=45, chance=0.006, creature=8311, map=109, n=1},
             {inst="줄파락", boss="Sandarr Dunereaver 외 14", minLvl=43, chance=0.288, creature=10080, map=209, n=15},
             {inst="마라우돈", boss="Constrictor Vine 외 14", minLvl=42, chance=0.015, creature=12220, map=349, n=15},
         },
         [9907] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 7", minLvl=40, chance=1.3, creature=-141979, map=70, n=8},
+            {inst="울다만", boss="Earthen Stonebreaker 외 8", minLvl=40, creature=7396, map=70, n=9},
             {inst="가라앉은 사원", boss="Slime Maggot", minLvl=45, chance=0.006, creature=8311, map=109, n=1},
             {inst="줄파락", boss="Sandarr Dunereaver 외 14", minLvl=43, chance=0.288, creature=10080, map=209, n=15},
             {inst="마라우돈", boss="Constrictor Vine 외 14", minLvl=42, chance=0.015, creature=12220, map=349, n=15},
@@ -6823,7 +6824,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Barbed Lasher 외 10", minLvl=42, chance=0.015, creature=12219, map=349, n=11},
         },
         [9909] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 11", minLvl=39, chance=1.4, creature=-141979, map=70, n=12},
+            {inst="울다만", boss="Stonevault Geomancer 외 12", minLvl=39, creature=4853, map=70, n=13},
             {inst="가시덩굴 구릉", boss="Lady Falther'ess", minLvl=40, chance=0.007, creature=14686, map=129, n=1},
             {inst="붉은십자군 수도원", boss="Scarlet Champion 외 1", minLvl=39, chance=0.006, creature=4302, map=189, n=2},
             {inst="줄파락", boss="Sandfury Witch Doctor 외 5", minLvl=43, chance=0.015, creature=5650, map=209, n=6},
@@ -6855,7 +6856,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 17", minLvl=44, chance=0.015, creature=12220, map=349, n=18},
         },
         [9914] = {
-            {inst="울다만", boss="Earthen Custodian", minLvl=44, chance=0.006, creature=7309, map=70, n=1},
+            {inst="울다만", boss="Stone Keeper 외 1", minLvl=44, creature=4857, map=70, n=2},
             {inst="가라앉은 사원", boss="Atal'ai Witch Doctor 외 10", minLvl=45, chance=0.006, creature=5259, map=109, n=11},
             {inst="줄파락", boss="Sandarr Dunereaver 외 18", minLvl=44, chance=0.288, creature=10080, map=209, n=19},
             {inst="검은바위 나락", boss="Bloodhound", minLvl=49, chance=0.006, creature=8921, map=230, n=1},
@@ -6868,7 +6869,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 21", minLvl=42, chance=0.015, creature=12220, map=349, n=22},
         },
         [9916] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 7", minLvl=40, chance=1.5, creature=-141979, map=70, n=8},
+            {inst="울다만", boss="Earthen Rocksmasher 외 8", minLvl=40, creature=7011, map=70, n=9},
             {inst="가라앉은 사원", boss="Slime Maggot", minLvl=45, chance=0.006, creature=8311, map=109, n=1},
             {inst="줄파락", boss="Sandarr Dunereaver 외 14", minLvl=43, chance=0.288, creature=10080, map=209, n=15},
             {inst="마라우돈", boss="Constrictor Vine 외 14", minLvl=42, chance=0.015, creature=12220, map=349, n=15},
@@ -6982,7 +6983,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 21", minLvl=42, chance=0.015, creature=12220, map=349, n=22},
         },
         [9934] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 7", minLvl=40, chance=0.8, creature=-141979, map=70, n=8},
+            {inst="울다만", boss="Stonevault Geomancer 외 8", minLvl=40, creature=4853, map=70, n=9},
             {inst="가라앉은 사원", boss="Slime Maggot", minLvl=45, chance=0.006, creature=8311, map=109, n=1},
             {inst="줄파락", boss="Sandarr Dunereaver 외 14", minLvl=43, chance=0.288, creature=10080, map=209, n=15},
             {inst="마라우돈", boss="Constrictor Vine 외 14", minLvl=42, chance=0.015, creature=12220, map=349, n=15},
@@ -7442,7 +7443,7 @@ ns.GearDB = {
             {inst="마라우돈", boss="Constrictor Vine 외 23", minLvl=42, chance=0.015, creature=12220, map=349, n=24},
         },
         [10088] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 6", minLvl=42, chance=1.6, creature=-141979, map=70, n=7},
+            {inst="울다만", boss="Earthen Stonebreaker 외 7", minLvl=42, creature=7396, map=70, n=8},
             {inst="가라앉은 사원", boss="Slime Maggot 외 1", minLvl=45, chance=0.006, creature=8311, map=109, n=2},
             {inst="줄파락", boss="Sandarr Dunereaver 외 21", minLvl=43, chance=0.288, creature=10080, map=209, n=22},
             {inst="마라우돈", boss="Constrictor Vine 외 21", minLvl=42, chance=0.015, creature=12220, map=349, n=22},
@@ -10698,7 +10699,7 @@ ns.GearDB = {
             {inst="가시덩굴 우리", boss="Ward Guardian 외 7", minLvl=29, chance=0.009, creature=4427, map=47, n=8},
             {inst="놈리건", boss="Mekgineer Thermaplugg 외 15", minLvl=29, chance=0.433, creature=7800, map=90, n=16},
             {inst="가시덩굴 구릉", boss="Withered Battle Boar 외 2", minLvl=34, chance=0.009, creature=7333, map=129, n=3},
-            {inst="붉은십자군 수도원", boss="Scarlet Tracking Hound 외 12", minLvl=30, chance=0.022, creature=4304, map=189, n=13},
+            {inst="붉은십자군 수도원", boss="Houndmaster Loksey 외 13", minLvl=30, creature=3974, map=189, n=14},
         },
         [12010] = {
             {inst="울다만", boss="Shrike Bat 외 13", minLvl=35, chance=0.016, creature=4861, map=70, n=14},
@@ -10780,7 +10781,7 @@ ns.GearDB = {
         },
         [12022] = {
             {inst="울다만", boss="상자: Ancient Treasure 외 22", minLvl=37, chance=0.7, creature=-141979, map=70, n=23},
-            {inst="가시덩굴 구릉", boss="Lady Falther'ess 외 1", minLvl=38, chance=0.007, creature=14686, map=129, n=2},
+            {inst="가시덩굴 구릉", boss="Freezing Spirit 외 2", minLvl=38, creature=7353, map=129, n=3},
             {inst="붉은십자군 수도원", boss="Scarlet Defender 외 6", minLvl=37, chance=0.017, creature=4298, map=189, n=7},
             {inst="마라우돈", boss="Gelk 외 4", minLvl=42, chance=0.007, creature=13741, map=349, n=5},
         },
@@ -11048,6 +11049,9 @@ ns.GearDB = {
         },
         [12466] = {
             {inst="가라앉은 사원", boss="Morphaz 외 3", minLvl=51, chance=6.25, creature=5719, map=109, n=4},
+        },
+        [12469] = {
+            {inst="줄파락", boss="Dustwraith", minLvl=45, creature=10081, map=209, n=1},
         },
         [12470] = {
             {inst="줄파락", boss="Zerillis", minLvl=45, chance=18.686, creature=10082, map=209, n=1},
@@ -13166,7 +13170,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Fel Steed 외 11", minLvl=19, chance=0.045, creature=3864, map=33, n=12},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 4", minLvl=23, chance=0.011, creature=1696, map=34, n=5},
             {inst="죽음의 폐광", boss="Edwin VanCleef 외 5", minLvl=19, chance=0.02, creature=639, map=36, n=6},
-            {inst="통곡의 동굴", boss="Deviate Viper 외 3", minLvl=19, chance=0.011, creature=5755, map=43, n=4},
+            {inst="통곡의 동굴", boss="Druid of the Fang 외 4", minLvl=19, creature=3840, map=43, n=5},
             {inst="가시덩굴 우리", boss="Razorfen Warrior 외 1", minLvl=24, chance=0.009, creature=4435, map=47, n=2},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 16", minLvl=22, chance=0.014, creature=4815, map=48, n=17},
         },
@@ -13612,7 +13616,7 @@ ns.GearDB = {
         },
         [14232] = {
             {inst="울다만", boss="Shrike Bat 외 21", minLvl=35, chance=0.016, creature=4861, map=70, n=22},
-            {inst="가시덩굴 구릉", boss="Withered Reaver 외 13", minLvl=35, chance=0.018, creature=7328, map=129, n=14},
+            {inst="가시덩굴 구릉", boss="Mordresh Fire Eye 외 14", minLvl=35, creature=7357, map=129, n=15},
             {inst="붉은십자군 수도원", boss="Scarlet Chaplain 외 13", minLvl=34, chance=0.018, creature=4299, map=189, n=14},
         },
         [14233] = {
@@ -14585,7 +14589,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Sever 외 3", minLvl=23, chance=0.011, creature=14682, map=33, n=4},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 18", minLvl=24, chance=0.011, creature=4520, map=47, n=19},
-            {inst="검은심연의 나락", boss="Old Serra'kis 외 14", minLvl=23, chance=0.011, creature=4830, map=48, n=15},
+            {inst="검은심연의 나락", boss="Aku'mai 외 15", minLvl=23, creature=4829, map=48, n=16},
             {inst="놈리건", boss="Mobile Alert System 외 10", minLvl=25, chance=0.011, creature=7849, map=90, n=11},
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
@@ -14651,7 +14655,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Scarlet Trainee 외 6", minLvl=30, chance=0.009, creature=6575, map=189, n=7},
         },
         [14404] = {
-            {inst="가시덩굴 우리", boss="Ward Guardian 외 7", minLvl=29, chance=0.009, creature=4427, map=47, n=8},
+            {inst="가시덩굴 우리", boss="Overlord Ramtusk 외 8", minLvl=29, creature=4420, map=47, n=9},
             {inst="놈리건", boss="Mekgineer Thermaplugg 외 15", minLvl=29, chance=0.433, creature=7800, map=90, n=16},
             {inst="가시덩굴 구릉", boss="Withered Battle Boar 외 2", minLvl=34, chance=0.009, creature=7333, map=129, n=3},
             {inst="붉은십자군 수도원", boss="Scarlet Tracking Hound 외 12", minLvl=30, chance=0.022, creature=4304, map=189, n=13},
@@ -15335,7 +15339,7 @@ ns.GearDB = {
         [14571] = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 15", minLvl=17, chance=0.069, creature=644, map=36, n=16},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 11", minLvl=17, chance=0.045, creature=3636, map=43, n=12},
+            {inst="통곡의 동굴", boss="Lady Anacondra 외 12", minLvl=17, creature=3671, map=43, n=13},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 4", minLvl=22, chance=0.014, creature=4815, map=48, n=5},
         },
         [14572] = {
@@ -16010,7 +16014,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Fel Steed 외 11", minLvl=19, chance=0.045, creature=3864, map=33, n=12},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 4", minLvl=23, chance=0.011, creature=1696, map=34, n=5},
             {inst="죽음의 폐광", boss="Edwin VanCleef 외 5", minLvl=19, chance=0.02, creature=639, map=36, n=6},
-            {inst="통곡의 동굴", boss="Deviate Viper 외 3", minLvl=19, chance=0.011, creature=5755, map=43, n=4},
+            {inst="통곡의 동굴", boss="Druid of the Fang 외 4", minLvl=19, creature=3840, map=43, n=5},
             {inst="가시덩굴 우리", boss="Razorfen Warrior 외 1", minLvl=24, chance=0.009, creature=4435, map=47, n=2},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 16", minLvl=22, chance=0.014, creature=4815, map=48, n=17},
         },
@@ -16561,7 +16565,7 @@ ns.GearDB = {
             {inst="울다만", boss="Jadespine Basilisk 외 10", minLvl=39, chance=0.016, creature=4863, map=70, n=11},
             {inst="가시덩굴 구릉", boss="Lady Falther'ess", minLvl=40, chance=0.007, creature=14686, map=129, n=1},
             {inst="붉은십자군 수도원", boss="Scarlet Champion 외 1", minLvl=39, chance=0.006, creature=4302, map=189, n=2},
-            {inst="줄파락", boss="Sandfury Witch Doctor 외 5", minLvl=43, chance=0.015, creature=5650, map=209, n=6},
+            {inst="줄파락", boss="Scarab 외 6", minLvl=43, creature=7269, map=209, n=7},
             {inst="마라우돈", boss="Barbed Lasher 외 10", minLvl=42, chance=0.015, creature=12219, map=349, n=11},
         },
         [14825] = {
@@ -17783,7 +17787,7 @@ ns.GearDB = {
         [15126] = {
             {inst="스톰윈드 지하감옥", boss="Dextren Ward 외 3", minLvl=25, chance=0.01, creature=1663, map=34, n=4},
             {inst="가시덩굴 우리", boss="Blood of Agamaggan 외 22", minLvl=25, chance=0.01, creature=4541, map=47, n=23},
-            {inst="검은심연의 나락", boss="Baron Aquanis 외 5", minLvl=25, chance=0.01, creature=12876, map=48, n=6},
+            {inst="검은심연의 나락", boss="Barbed Crustacean 외 6", minLvl=25, creature=4823, map=48, n=7},
             {inst="놈리건", boss="Irradiated Pillager 외 17", minLvl=25, chance=0.009, creature=6329, map=90, n=18},
             {inst="붉은십자군 수도원", boss="Scarlet Trainee 외 4", minLvl=30, chance=0.009, creature=6575, map=189, n=5},
         },
@@ -18294,7 +18298,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Scarlet Guardsman 외 9", minLvl=36, chance=0.018, creature=4290, map=189, n=10},
         },
         [15215] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 6", minLvl=42, chance=3.4, creature=-141979, map=70, n=7},
+            {inst="울다만", boss="Stonevault Brawler 외 8", minLvl=42, creature=4855, map=70, n=9},
             {inst="가라앉은 사원", boss="Slime Maggot 외 1", minLvl=45, chance=0.006, creature=8311, map=109, n=2},
             {inst="줄파락", boss="Sandarr Dunereaver 외 21", minLvl=43, chance=0.288, creature=10080, map=209, n=22},
             {inst="마라우돈", boss="Constrictor Vine 외 21", minLvl=42, chance=0.015, creature=12220, map=349, n=22},
@@ -18369,7 +18373,7 @@ ns.GearDB = {
             {inst="성난불길 협곡", boss="Oggleflint 외 3", minLvl=16, chance=0.014, creature=11517, map=389, n=4},
         },
         [15223] = {
-            {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
+            {inst="그림자송곳니 성채", boss="Son of Arugal 외 9", minLvl=20, creature=2529, map=33, n=10},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
             {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
@@ -18379,7 +18383,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
         [15224] = {
-            {inst="그림자송곳니 성채", boss="Wailing Guardsman 외 5", minLvl=21, chance=0.011, creature=3877, map=33, n=6},
+            {inst="그림자송곳니 성채", boss="Son of Arugal 외 6", minLvl=21, creature=2529, map=33, n=7},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 7", minLvl=23, chance=0.011, creature=1696, map=34, n=8},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 8", minLvl=24, chance=0.011, creature=4520, map=47, n=9},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 21", minLvl=22, chance=0.014, creature=4815, map=48, n=22},
@@ -18424,7 +18428,7 @@ ns.GearDB = {
             {inst="안퀴라즈 폐허", boss="Silicate Feeder", minLvl=55, chance=0.008, creature=15333, map=509, n=1},
         },
         [15230] = {
-            {inst="그림자송곳니 성채", boss="Wailing Guardsman 외 5", minLvl=21, chance=0.011, creature=3877, map=33, n=6},
+            {inst="그림자송곳니 성채", boss="Son of Arugal 외 6", minLvl=21, creature=2529, map=33, n=7},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 7", minLvl=23, chance=0.011, creature=1696, map=34, n=8},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 8", minLvl=24, chance=0.011, creature=4520, map=47, n=9},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 21", minLvl=22, chance=0.014, creature=4815, map=48, n=22},
@@ -18452,7 +18456,7 @@ ns.GearDB = {
         [15234] = {
             {inst="울다만", boss="Shrike Bat 외 20", minLvl=36, chance=0.016, creature=4861, map=70, n=21},
             {inst="가시덩굴 구릉", boss="Battle Boar Horror 외 2", minLvl=37, chance=0.008, creature=7334, map=129, n=3},
-            {inst="붉은십자군 수도원", boss="Scarlet Guardsman 외 9", minLvl=36, chance=0.018, creature=4290, map=189, n=10},
+            {inst="붉은십자군 수도원", boss="Herod 외 10", minLvl=36, creature=3975, map=189, n=11},
         },
         [15235] = {
             {inst="울다만", boss="Earthen Custodian", minLvl=44, chance=0.006, creature=7309, map=70, n=1},
@@ -18511,10 +18515,10 @@ ns.GearDB = {
             {inst="낙스라마스", boss="Living Monstrosity 외 33", minLvl=61, chance=0.011, creature=16021, map=533, n=34},
         },
         [15241] = {
-            {inst="그림자송곳니 성채", boss="Sever 외 4", minLvl=22, chance=0.011, creature=14682, map=33, n=5},
+            {inst="그림자송곳니 성채", boss="Son of Arugal 외 5", minLvl=22, creature=2529, map=33, n=6},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 11", minLvl=24, chance=0.011, creature=4520, map=47, n=12},
-            {inst="검은심연의 나락", boss="Blindlight Muckdweller 외 18", minLvl=22, chance=0.013, creature=4819, map=48, n=19},
+            {inst="검은심연의 나락", boss="Gelihast 외 19", minLvl=22, creature=6243, map=48, n=20},
             {inst="놈리건", boss="Mobile Alert System 외 5", minLvl=25, chance=0.011, creature=7849, map=90, n=6},
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
@@ -18591,7 +18595,7 @@ ns.GearDB = {
             {inst="붉은십자군 수도원", boss="Scarlet Tracking Hound 외 9", minLvl=30, chance=0.022, creature=4304, map=189, n=10},
         },
         [15251] = {
-            {inst="울다만", boss="상자: Ancient Treasure 외 11", minLvl=39, chance=3.2, creature=-141979, map=70, n=12},
+            {inst="울다만", boss="Stonevault Geomancer 외 12", minLvl=39, creature=4853, map=70, n=13},
             {inst="가시덩굴 구릉", boss="Lady Falther'ess", minLvl=40, chance=0.007, creature=14686, map=129, n=1},
             {inst="붉은십자군 수도원", boss="Scarlet Champion 외 1", minLvl=39, chance=0.006, creature=4302, map=189, n=2},
             {inst="줄파락", boss="Sandfury Witch Doctor 외 5", minLvl=43, chance=0.015, creature=5650, map=209, n=6},
@@ -18667,7 +18671,7 @@ ns.GearDB = {
             {inst="낙스라마스", boss="Living Monstrosity 외 5", minLvl=62, chance=0.011, creature=16021, map=533, n=6},
         },
         [15259] = {
-            {inst="그림자송곳니 성채", boss="Wailing Guardsman 외 5", minLvl=21, chance=0.011, creature=3877, map=33, n=6},
+            {inst="그림자송곳니 성채", boss="Lupine Horror 외 6", minLvl=21, creature=3863, map=33, n=7},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 7", minLvl=23, chance=0.011, creature=1696, map=34, n=8},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 8", minLvl=24, chance=0.011, creature=4520, map=47, n=9},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 21", minLvl=22, chance=0.014, creature=4815, map=48, n=22},
@@ -18748,7 +18752,7 @@ ns.GearDB = {
             {inst="성난불길 협곡", boss="Earthborer 외 10", minLvl=13, chance=0.08, creature=11320, map=389, n=11},
         },
         [15269] = {
-            {inst="그림자송곳니 성채", boss="Shadowfang Darksoul 외 7", minLvl=20, chance=0.011, creature=3855, map=33, n=8},
+            {inst="그림자송곳니 성채", boss="Odo the Blindwatcher 외 8", minLvl=20, creature=4279, map=33, n=9},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 6", minLvl=23, chance=0.011, creature=1696, map=34, n=7},
             {inst="죽음의 폐광", boss="Edwin VanCleef", minLvl=21, chance=0.02, creature=639, map=36, n=1},
             {inst="통곡의 동굴", boss="Deviate Dreadfang 외 1", minLvl=20, chance=0.011, creature=5056, map=43, n=2},
@@ -19118,7 +19122,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Sever 외 3", minLvl=23, chance=0.011, creature=14682, map=33, n=4},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 18", minLvl=24, chance=0.011, creature=4520, map=47, n=19},
-            {inst="검은심연의 나락", boss="Old Serra'kis 외 14", minLvl=23, chance=0.011, creature=4830, map=48, n=15},
+            {inst="검은심연의 나락", boss="Blindlight Muckdweller 외 15", minLvl=23, creature=4819, map=48, n=16},
             {inst="놈리건", boss="Mobile Alert System 외 10", minLvl=25, chance=0.011, creature=7849, map=90, n=11},
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
@@ -19205,7 +19209,7 @@ ns.GearDB = {
             {inst="그림자송곳니 성채", boss="Sever 외 4", minLvl=22, chance=0.011, creature=14682, map=33, n=5},
             {inst="스톰윈드 지하감옥", boss="Targorr the Dread 외 8", minLvl=23, chance=0.011, creature=1696, map=34, n=9},
             {inst="가시덩굴 우리", boss="Razorfen Geomancer 외 11", minLvl=24, chance=0.011, creature=4520, map=47, n=12},
-            {inst="검은심연의 나락", boss="Blindlight Muckdweller 외 18", minLvl=22, chance=0.013, creature=4819, map=48, n=19},
+            {inst="검은심연의 나락", boss="Twilight Lord Kelris 외 19", minLvl=22, creature=4832, map=48, n=20},
             {inst="놈리건", boss="Mobile Alert System 외 5", minLvl=25, chance=0.011, creature=7849, map=90, n=6},
             {inst="붉은십자군 수도원", boss="Suffering Victim", minLvl=25, chance=0.011, creature=6547, map=189, n=1},
         },
@@ -19827,7 +19831,7 @@ ns.GearDB = {
         [15506] = {
             {inst="그림자송곳니 성채", boss="Bleak Worg 외 16", minLvl=18, chance=0.045, creature=3861, map=33, n=17},
             {inst="죽음의 폐광", boss="Rhahk'Zor 외 15", minLvl=17, chance=0.069, creature=644, map=36, n=16},
-            {inst="통곡의 동굴", boss="Deviate Ravager 외 11", minLvl=17, chance=0.045, creature=3636, map=43, n=12},
+            {inst="통곡의 동굴", boss="Verdan the Everliving 외 12", minLvl=17, creature=5775, map=43, n=13},
             {inst="검은심연의 나락", boss="Murkshallow Snapclaw 외 4", minLvl=22, chance=0.014, creature=4815, map=48, n=5},
         },
         [15507] = {
@@ -20133,7 +20137,7 @@ ns.GearDB = {
         },
         [15548] = {
             {inst="스톰윈드 지하감옥", boss="Bazil Thredd", minLvl=29, chance=0.01, creature=1716, map=34, n=1},
-            {inst="가시덩굴 우리", boss="Razorfen Totemic 외 13", minLvl=28, chance=0.01, creature=4440, map=47, n=14},
+            {inst="가시덩굴 우리", boss="Roogug 외 14", minLvl=28, creature=6168, map=47, n=15},
             {inst="놈리건", boss="Grubbis 외 19", minLvl=28, chance=0.393, creature=7361, map=90, n=20},
             {inst="붉은십자군 수도원", boss="Scarlet Tracking Hound 외 9", minLvl=30, chance=0.022, creature=4304, map=189, n=10},
         },
@@ -20416,7 +20420,7 @@ ns.GearDB = {
         },
         [15600] = {
             {inst="울다만", boss="Shrike Bat 외 20", minLvl=38, chance=0.016, creature=4861, map=70, n=21},
-            {inst="가시덩굴 구릉", boss="Lady Falther'ess 외 1", minLvl=38, chance=0.007, creature=14686, map=129, n=2},
+            {inst="가시덩굴 구릉", boss="Freezing Spirit 외 2", minLvl=38, creature=7353, map=129, n=3},
             {inst="붉은십자군 수도원", boss="Scarlet Wizard 외 3", minLvl=38, chance=0.006, creature=4300, map=189, n=4},
             {inst="줄파락", boss="Sandfury Shadowcaster", minLvl=43, chance=0.006, creature=5648, map=209, n=1},
             {inst="마라우돈", boss="Putridus Satyr 외 8", minLvl=42, chance=0.015, creature=11790, map=349, n=9},
@@ -21791,7 +21795,7 @@ ns.GearDB = {
             {inst="스트라솔름", boss="Thuzadin Shadowcaster 외 3", minLvl=57, chance=1.3, creature=10398, map=329, n=4},
         },
         [16703] = {
-            {inst="검은바위 첨탑", boss="Blackhand Dreadweaver 외 5", minLvl=54, chance=3.4, creature=9817, map=229, n=6},
+            {inst="검은바위 첨탑", boss="Quartermaster Zigris 외 6", minLvl=54, creature=9736, map=229, n=7},
         },
         [16704] = {
             {inst="스트라솔름", boss="Baroness Anastari", minLvl=59, chance=20, creature=10436, map=329, n=1},
@@ -22590,6 +22594,9 @@ ns.GearDB = {
         },
         [18302] = {
             {inst="혈투의 전장", boss="Lethtendris", minLvl=57, chance=30, creature=14327, map=429, n=1},
+        },
+        [18303] = {
+            {inst="혈투의 전장", boss="Pusillin", minLvl=57, creature=14354, map=429, n=1},
         },
         [18305] = {
             {inst="혈투의 전장", boss="Hydrospawn", minLvl=57, chance=25, creature=13280, map=429, n=1},
@@ -25160,6 +25167,9 @@ ns.GearDB = {
         [271218] = {
             {inst="로데론의 폐허", boss="Viktor the Vile", minLvl=15, creature=256035, map=2999, n=1},
         },
+        [271718] = {
+            {inst="가라앉은 도시", boss="Var'Taka 외 2", minLvl=35, creature=258924, map=2970, n=3},
+        },
         [272996] = {
             {inst="성난불길 협곡", boss="Oggleflint", minLvl=16, creature=11517, map=389, n=1},
         },
@@ -25430,11 +25440,443 @@ ns.GearDB = {
         [274293] = {
             {inst="붉은십자군 수도원", boss="Arcanist Doan", minLvl=37, creature=6487, map=189, n=1},
         },
+        [274294] = {
+            {inst="붉은십자군 수도원", boss="Arcanist Doan", minLvl=37, creature=6487, map=189, n=1},
+        },
+        [274295] = {
+            {inst="붉은십자군 수도원", boss="Herod", minLvl=40, creature=3975, map=189, n=1},
+        },
+        [274380] = {
+            {inst="가시덩굴 구릉", boss="Plaguemaw the Rotting", minLvl=40, creature=7356, map=129, n=1},
+        },
+        [274381] = {
+            {inst="가시덩굴 구릉", boss="Amnennar the Coldbringer", minLvl=41, creature=7358, map=129, n=1},
+        },
+        [274385] = {
+            {inst="가시덩굴 구릉", boss="Glutton", minLvl=40, creature=8567, map=129, n=1},
+        },
+        [274425] = {
+            {inst="울다만", boss="Obsidian Sentinel", minLvl=42, creature=7023, map=70, n=1},
+        },
+        [274428] = {
+            {inst="울다만", boss="Obsidian Sentinel", minLvl=42, creature=7023, map=70, n=1},
+        },
+        [274430] = {
+            {inst="울다만", boss="Obsidian Sentinel", minLvl=42, creature=7023, map=70, n=1},
+        },
+        [274431] = {
+            {inst="울다만", boss="Ancient Stone Keeper", minLvl=44, creature=7206, map=70, n=1},
+        },
+        [274432] = {
+            {inst="울다만", boss="Archaedas", minLvl=47, creature=2748, map=70, n=1},
+        },
+        [274484] = {
+            {inst="울다만", boss="Ironaya", minLvl=40, creature=7228, map=70, n=1},
+        },
+        [274485] = {
+            {inst="울다만", boss="Obsidian Sentinel", minLvl=42, creature=7023, map=70, n=1},
+        },
+        [274598] = {
+            {inst="가라앉은 도시", boss="Zul'Alai", minLvl=35, creature=258905, map=2970, n=1},
+        },
+        [274599] = {
+            {inst="가라앉은 도시", boss="Zul'Alai", minLvl=35, creature=258905, map=2970, n=1},
+        },
+        [274600] = {
+            {inst="가라앉은 도시", boss="Zul'Alai", minLvl=35, creature=258905, map=2970, n=1},
+        },
+        [274601] = {
+            {inst="가라앉은 도시", boss="Var'Taka", minLvl=35, creature=258924, map=2970, n=1},
+        },
+        [274602] = {
+            {inst="가라앉은 도시", boss="Var'Taka", minLvl=35, creature=258924, map=2970, n=1},
+        },
+        [274603] = {
+            {inst="가라앉은 도시", boss="Captain Dreadrise", minLvl=35, creature=260042, map=2970, n=1},
+        },
+        [274604] = {
+            {inst="가라앉은 도시", boss="Captain Dreadrise", minLvl=35, creature=260042, map=2970, n=1},
+        },
+        [274605] = {
+            {inst="가라앉은 도시", boss="Captain Dreadrise", minLvl=35, creature=260042, map=2970, n=1},
+        },
+        [274606] = {
+            {inst="가라앉은 도시", boss="Deathless Marrow", minLvl=35, creature=260202, map=2970, n=1},
+        },
+        [274607] = {
+            {inst="가라앉은 도시", boss="Deathless Marrow", minLvl=35, creature=260202, map=2970, n=1},
+        },
+        [274608] = {
+            {inst="가라앉은 도시", boss="Min'loth the Serpent 외 1", minLvl=35, creature=260243, map=2970, n=2},
+        },
+        [274609] = {
+            {inst="가라앉은 도시", boss="Min'loth the Serpent 외 1", minLvl=35, creature=260243, map=2970, n=2},
+        },
+        [274610] = {
+            {inst="가라앉은 도시", boss="Min'loth the Serpent 외 1", minLvl=35, creature=260243, map=2970, n=2},
+        },
+        [274611] = {
+            {inst="가라앉은 도시", boss="Primeval Elemental 외 1", minLvl=35, creature=263886, map=2970, n=2},
+        },
+        [274612] = {
+            {inst="가라앉은 도시", boss="Primeval Elemental 외 1", minLvl=35, creature=263886, map=2970, n=2},
+        },
+        [274613] = {
+            {inst="가라앉은 도시", boss="Var'Taka", minLvl=35, creature=258924, map=2970, n=1},
+        },
+        [274614] = {
+            {inst="가라앉은 도시", boss="Deathless Marrow", minLvl=35, creature=260202, map=2970, n=1},
+        },
+        [274615] = {
+            {inst="가라앉은 도시", boss="Primeval Elemental 외 1", minLvl=35, creature=263886, map=2970, n=2},
+        },
+        [274638] = {
+            {inst="줄파락", boss="Theka the Martyr", minLvl=45, creature=7272, map=209, n=1},
+        },
+        [274639] = {
+            {inst="줄파락", boss="Theka the Martyr", minLvl=45, creature=7272, map=209, n=1},
+        },
+        [274641] = {
+            {inst="줄파락", boss="Theka the Martyr", minLvl=45, creature=7272, map=209, n=1},
+        },
+        [274642] = {
+            {inst="줄파락", boss="Witch Doctor Zum'rah", minLvl=46, creature=7271, map=209, n=1},
+        },
+        [274643] = {
+            {inst="줄파락", boss="Nekrum Gutchewer", minLvl=45, creature=7796, map=209, n=1},
+        },
+        [274644] = {
+            {inst="줄파락", boss="Nekrum Gutchewer", minLvl=45, creature=7796, map=209, n=1},
+        },
+        [274645] = {
+            {inst="줄파락", boss="Nekrum Gutchewer", minLvl=45, creature=7796, map=209, n=1},
+        },
+        [274646] = {
+            {inst="줄파락", boss="Sergeant Bly", minLvl=45, creature=7604, map=209, n=1},
+        },
+        [274647] = {
+            {inst="줄파락", boss="Sergeant Bly", minLvl=45, creature=7604, map=209, n=1},
+        },
+        [274648] = {
+            {inst="줄파락", boss="Sergeant Bly", minLvl=45, creature=7604, map=209, n=1},
+        },
+        [274651] = {
+            {inst="줄파락", boss="Hydromancer Velratha", minLvl=46, creature=7795, map=209, n=1},
+        },
+        [274652] = {
+            {inst="줄파락", boss="Hydromancer Velratha", minLvl=46, creature=7795, map=209, n=1},
+        },
+        [274653] = {
+            {inst="줄파락", boss="Hydromancer Velratha", minLvl=46, creature=7795, map=209, n=1},
+        },
+        [274654] = {
+            {inst="줄파락", boss="Ruuzlu", minLvl=46, creature=7797, map=209, n=1},
+        },
+        [274655] = {
+            {inst="줄파락", boss="Ruuzlu", minLvl=46, creature=7797, map=209, n=1},
+        },
+        [274657] = {
+            {inst="줄파락", boss="Gahz'rilla", minLvl=46, creature=7273, map=209, n=1},
+        },
+        [274658] = {
+            {inst="줄파락", boss="Zerillis", minLvl=45, creature=10082, map=209, n=1},
+        },
+        [274995] = {
+            {inst="크롤도크 보루", boss="Slavecrusher Grox", minLvl=40, creature=258966, map=3039, n=1},
+        },
+        [274996] = {
+            {inst="크롤도크 보루", boss="Slavecrusher Grox", minLvl=40, creature=258966, map=3039, n=1},
+        },
+        [274997] = {
+            {inst="크롤도크 보루", boss="Slavecrusher Grox", minLvl=40, creature=258966, map=3039, n=1},
+        },
+        [274998] = {
+            {inst="크롤도크 보루", boss="Twilight Commander Zarmok", minLvl=40, creature=258972, map=3039, n=1},
+        },
+        [274999] = {
+            {inst="크롤도크 보루", boss="Twilight Commander Zarmok", minLvl=40, creature=258972, map=3039, n=1},
+        },
+        [275000] = {
+            {inst="크롤도크 보루", boss="Twilight Commander Zarmok", minLvl=40, creature=258972, map=3039, n=1},
+        },
+        [275001] = {
+            {inst="크롤도크 보루", boss="War Handler Ashka", minLvl=40, creature=259281, map=3039, n=1},
+        },
+        [275002] = {
+            {inst="크롤도크 보루", boss="War Handler Ashka", minLvl=40, creature=259281, map=3039, n=1},
+        },
+        [275003] = {
+            {inst="크롤도크 보루", boss="War Handler Ashka", minLvl=40, creature=259281, map=3039, n=1},
+        },
+        [275004] = {
+            {inst="크롤도크 보루", boss="Nar'gurk", minLvl=40, creature=258964, map=3039, n=1},
+        },
+        [275005] = {
+            {inst="크롤도크 보루", boss="Nar'gurk", minLvl=40, creature=258964, map=3039, n=1},
+        },
+        [275006] = {
+            {inst="크롤도크 보루", boss="Nar'gurk", minLvl=40, creature=258964, map=3039, n=1},
+        },
+        [275007] = {
+            {inst="크롤도크 보루", boss="Overlord Mugg", minLvl=40, creature=258968, map=3039, n=1},
+        },
+        [275008] = {
+            {inst="크롤도크 보루", boss="Overlord Mugg", minLvl=40, creature=258968, map=3039, n=1},
+        },
+        [275009] = {
+            {inst="크롤도크 보루", boss="Overlord Mugg", minLvl=40, creature=258968, map=3039, n=1},
+        },
+        [275010] = {
+            {inst="크롤도크 보루", boss="Overlord Mugg", minLvl=40, creature=258968, map=3039, n=1},
+        },
+        [275864] = {
+            {inst="마라우돈", boss="Lord Vyletongue", minLvl=47, creature=12236, map=349, n=1},
+        },
+        [276397] = {
+            {inst="스트라솔름", boss="Malor the Zealous", minLvl=60, creature=11032, map=329, n=1},
+        },
+        [276398] = {
+            {inst="스트라솔름", boss="Malor the Zealous", minLvl=60, creature=11032, map=329, n=1},
+        },
+        [276399] = {
+            {inst="스트라솔름", boss="Malor the Zealous", minLvl=60, creature=11032, map=329, n=1},
+        },
+        [276404] = {
+            {inst="스트라솔름", boss="Crimson Hammersmith", minLvl=60, creature=11120, map=329, n=1},
+        },
+        [276732] = {
+            {inst="알카즈 감옥", boss="Overseer Wrex", minLvl=48, creature=255391, map=2994, n=1},
+        },
+        [276733] = {
+            {inst="알카즈 감옥", boss="Overseer Wrex", minLvl=48, creature=255391, map=2994, n=1},
+        },
+        [276734] = {
+            {inst="알카즈 감옥", boss="Overseer Wrex", minLvl=48, creature=255391, map=2994, n=1},
+        },
+        [276735] = {
+            {inst="알카즈 감옥", boss="Tidemistress Ca'zass", minLvl=48, creature=255997, map=2994, n=1},
+        },
+        [276736] = {
+            {inst="알카즈 감옥", boss="Tidemistress Ca'zass", minLvl=48, creature=255997, map=2994, n=1},
+        },
+        [276737] = {
+            {inst="알카즈 감옥", boss="Tidemistress Ca'zass", minLvl=48, creature=255997, map=2994, n=1},
+        },
+        [276738] = {
+            {inst="알카즈 감옥", boss="Katerina the Cleaner", minLvl=48, creature=257016, map=2994, n=1},
+        },
+        [276739] = {
+            {inst="알카즈 감옥", boss="Katerina the Cleaner", minLvl=48, creature=257016, map=2994, n=1},
+        },
+        [276740] = {
+            {inst="알카즈 감옥", boss="Katerina the Cleaner", minLvl=48, creature=257016, map=2994, n=1},
+        },
+        [276741] = {
+            {inst="알카즈 감옥", boss="The Questioner", minLvl=48, creature=256236, map=2994, n=1},
+        },
+        [276742] = {
+            {inst="알카즈 감옥", boss="The Questioner", minLvl=48, creature=256236, map=2994, n=1},
+        },
+        [276743] = {
+            {inst="알카즈 감옥", boss="The Questioner", minLvl=48, creature=256236, map=2994, n=1},
+        },
+        [276744] = {
+            {inst="알카즈 감옥", boss="Blazeroar", minLvl=48, creature=255702, map=2994, n=1},
+        },
+        [276745] = {
+            {inst="알카즈 감옥", boss="Blazeroar", minLvl=48, creature=255702, map=2994, n=1},
+        },
+        [276746] = {
+            {inst="알카즈 감옥", boss="Blazeroar", minLvl=48, creature=255702, map=2994, n=1},
+        },
+        [276877] = {
+            {inst="검은바위 나락", boss="Plugger Spazzring", minLvl=55, creature=9499, map=230, n=1},
+        },
+        [280009] = {
+            {inst="구체자의 정원", boss="Titanosaur", minLvl=58, creature=253201, map=3001, n=1},
+        },
+        [280010] = {
+            {inst="구체자의 정원", boss="Titanosaur", minLvl=58, creature=253201, map=3001, n=1},
+        },
+        [280011] = {
+            {inst="구체자의 정원", boss="Titanosaur", minLvl=58, creature=253201, map=3001, n=1},
+        },
+        [280012] = {
+            {inst="구체자의 정원", boss="Ravasaur Hunters 외 1", minLvl=58, creature=253214, map=3001, n=2},
+        },
+        [280013] = {
+            {inst="구체자의 정원", boss="Ravasaur Hunters 외 1", minLvl=58, creature=253214, map=3001, n=2},
+        },
+        [280014] = {
+            {inst="구체자의 정원", boss="Ravasaur Hunters 외 1", minLvl=58, creature=253214, map=3001, n=2},
+        },
+        [280015] = {
+            {inst="구체자의 정원", boss="Venomridge", minLvl=58, creature=261813, map=3001, n=1},
+        },
+        [280016] = {
+            {inst="구체자의 정원", boss="Venomridge", minLvl=58, creature=261813, map=3001, n=1},
+        },
+        [280017] = {
+            {inst="구체자의 정원", boss="Venomridge", minLvl=58, creature=261813, map=3001, n=1},
+        },
+        [280018] = {
+            {inst="구체자의 정원", boss="Thunderhoof", minLvl=58, creature=261812, map=3001, n=1},
+        },
+        [280019] = {
+            {inst="구체자의 정원", boss="Thunderhoof", minLvl=58, creature=261812, map=3001, n=1},
+        },
+        [280020] = {
+            {inst="구체자의 정원", boss="Thunderhoof", minLvl=58, creature=261812, map=3001, n=1},
+        },
+        [280021] = {
+            {inst="구체자의 정원", boss="Direhorn Matriarch", minLvl=58, creature=262127, map=3001, n=1},
+        },
+        [280022] = {
+            {inst="구체자의 정원", boss="Direhorn Matriarch", minLvl=58, creature=262127, map=3001, n=1},
+        },
+        [280023] = {
+            {inst="구체자의 정원", boss="Nanaya", minLvl=58, creature=261809, map=3001, n=1},
+        },
+        [280024] = {
+            {inst="구체자의 정원", boss="Nanaya", minLvl=58, creature=261809, map=3001, n=1},
+        },
+        [280025] = {
+            {inst="구체자의 정원", boss="Nanaya", minLvl=58, creature=261809, map=3001, n=1},
+        },
+        [280026] = {
+            {inst="구체자의 정원", boss="King Op 외 2", minLvl=58, creature=261993, map=3001, n=3},
+        },
+        [280027] = {
+            {inst="구체자의 정원", boss="King Op 외 1", minLvl=58, creature=261993, map=3001, n=2},
+        },
+        [280028] = {
+            {inst="구체자의 정원", boss="Cinder 외 1", minLvl=58, creature=261974, map=3001, n=2},
+        },
+        [280029] = {
+            {inst="구체자의 정원", boss="Cinder 외 1", minLvl=58, creature=261974, map=3001, n=2},
+        },
+        [280031] = {
+            {inst="구체자의 정원", boss="Bolt 외 1", minLvl=58, creature=262081, map=3001, n=2},
+        },
+        [280032] = {
+            {inst="구체자의 정원", boss="Bolt 외 1", minLvl=58, creature=262081, map=3001, n=2},
+        },
+        [280045] = {
+            {inst="구체자의 정원", boss="Direhorn Matriarch", minLvl=58, creature=262127, map=3001, n=1},
+        },
+        [280056] = {
+            {inst="검은아귀 요새", boss="Impaan the Imprisoner", minLvl=55, creature=247206, map=2974, n=1},
+        },
+        [280057] = {
+            {inst="검은아귀 요새", boss="Impaan the Imprisoner", minLvl=55, creature=247206, map=2974, n=1},
+        },
+        [280058] = {
+            {inst="검은아귀 요새", boss="Impaan the Imprisoner", minLvl=55, creature=247206, map=2974, n=1},
+        },
+        [280059] = {
+            {inst="검은아귀 요새", boss="Bonesnout the Unbroken", minLvl=55, creature=247198, map=2974, n=1},
+        },
+        [280060] = {
+            {inst="검은아귀 요새", boss="Bonesnout the Unbroken", minLvl=55, creature=247198, map=2974, n=1},
+        },
+        [280061] = {
+            {inst="검은아귀 요새", boss="Bonesnout the Unbroken", minLvl=55, creature=247198, map=2974, n=1},
+        },
+        [280062] = {
+            {inst="검은아귀 요새", boss="Withermaw", minLvl=55, creature=247195, map=2974, n=1},
+        },
+        [280063] = {
+            {inst="검은아귀 요새", boss="Withermaw", minLvl=55, creature=247195, map=2974, n=1},
+        },
+        [280064] = {
+            {inst="검은아귀 요새", boss="Withermaw", minLvl=55, creature=247195, map=2974, n=1},
+        },
+        [280065] = {
+            {inst="검은아귀 요새", boss="Blackmaw Behemoth", minLvl=55, creature=247207, map=2974, n=1},
+        },
+        [280066] = {
+            {inst="검은아귀 요새", boss="Blackmaw Behemoth", minLvl=55, creature=247207, map=2974, n=1},
+        },
+        [280067] = {
+            {inst="검은아귀 요새", boss="Blackmaw Behemoth", minLvl=55, creature=247207, map=2974, n=1},
+        },
+        [280068] = {
+            {inst="검은아귀 요새", boss="Elder Shaman Bloodmane", minLvl=55, creature=247209, map=2974, n=1},
+        },
+        [280069] = {
+            {inst="검은아귀 요새", boss="Elder Shaman Bloodmane", minLvl=55, creature=247209, map=2974, n=1},
+        },
+        [280070] = {
+            {inst="검은아귀 요새", boss="Elder Shaman Bloodmane", minLvl=55, creature=247209, map=2974, n=1},
+        },
+        [280071] = {
+            {inst="검은아귀 요새", boss="Unbound Spirit", minLvl=55, creature=247231, map=2974, n=1},
+        },
+        [280072] = {
+            {inst="검은아귀 요새", boss="Unbound Spirit", minLvl=55, creature=247231, map=2974, n=1},
+        },
+        [280073] = {
+            {inst="검은아귀 요새", boss="Unbound Spirit", minLvl=55, creature=247231, map=2974, n=1},
+        },
+        [280074] = {
+            {inst="검은아귀 요새", boss="Varrox Bleakhoof", minLvl=55, creature=247234, map=2974, n=1},
+        },
+        [280075] = {
+            {inst="검은아귀 요새", boss="Varrox Bleakhoof", minLvl=55, creature=247234, map=2974, n=1},
+        },
+        [280076] = {
+            {inst="검은아귀 요새", boss="Varrox Bleakhoof", minLvl=55, creature=247234, map=2974, n=1},
+        },
+        [280077] = {
+            {inst="검은아귀 요새", boss="Gortek the Apprentice", minLvl=55, creature=269111, map=2974, n=1},
+        },
+        [280078] = {
+            {inst="검은아귀 요새", boss="Gortek the Apprentice", minLvl=55, creature=269111, map=2974, n=1},
+        },
+        [280079] = {
+            {inst="검은아귀 요새", boss="Moontouched Wanderer", minLvl=55, creature=269104, map=2974, n=1},
+        },
+        [280080] = {
+            {inst="검은아귀 요새", boss="Moontouched Wanderer", minLvl=55, creature=269104, map=2974, n=1},
+        },
+        [280085] = {
+            {inst="검은아귀 요새", boss="Tunnelweb Matriarch", minLvl=55, creature=250034, map=2974, n=1},
+        },
+        [280086] = {
+            {inst="검은아귀 요새", boss="Tunnelweb Matriarch", minLvl=55, creature=250034, map=2974, n=1},
+        },
         [284715] = {
             {inst="죽음의 폐광", boss="Mr. Smite", minLvl=20, creature=646, map=36, n=1},
         },
         [285292] = {
             {inst="죽음의 폐광", boss="Sneed's Shredder", minLvl=20, creature=642, map=36, n=1},
+        },
+        [286428] = {
+            {inst="크롤도크 보루", boss="Bossman Toof", minLvl=40, creature=264773, map=3039, n=1},
+        },
+        [286429] = {
+            {inst="크롤도크 보루", boss="Bossman Toof", minLvl=40, creature=264773, map=3039, n=1},
+        },
+        [286430] = {
+            {inst="크롤도크 보루", boss="Bossman Toof", minLvl=40, creature=264773, map=3039, n=1},
+        },
+        [286646] = {
+            {inst="가라앉은 도시", boss="Gill", minLvl=35, creature=264177, map=2970, n=1},
+        },
+        [286649] = {
+            {inst="가라앉은 도시", boss="Gill", minLvl=35, creature=264177, map=2970, n=1},
+        },
+        [286650] = {
+            {inst="가라앉은 도시", boss="\"Pyromancer\" Braxton", minLvl=35, creature=260468, map=2970, n=1},
+        },
+        [286651] = {
+            {inst="가라앉은 도시", boss="\"Pyromancer\" Braxton", minLvl=35, creature=260468, map=2970, n=1},
+        },
+        [286658] = {
+            {inst="가라앉은 도시", boss="Umbra", minLvl=35, creature=264172, map=2970, n=1},
+        },
+        [286662] = {
+            {inst="가라앉은 도시", boss="Umbra", minLvl=35, creature=264172, map=2970, n=1},
         },
         [286977] = {
             {inst="로데론의 폐허", boss="Trash mobs", minLvl=0, creature=0, map=2999, n=1},
@@ -27258,8 +27700,13 @@ ns.GearDB = {
         [531] = {name="안퀴라즈 사원"},
         [533] = {name="낙스라마스"},
         [2959] = {name="달라란"},
+        [2970] = {name="가라앉은 도시"},
+        [2974] = {name="검은아귀 요새"},
+        [2994] = {name="알카즈 감옥"},
         [2998] = {name="발굴 현장: 저습지"},
         [2999] = {name="로데론의 폐허"},
+        [3001] = {name="구체자의 정원"},
+        [3039] = {name="크롤도크 보루"},
         [3065] = {name="영주의 전당"},
     },
     known = {17,17,25,25,35,61,77,77,79,80,85,95,97,105,113,115,119,141,143,143,146,157,192,195,200,203,209,210,236,239,285,287,647,647,710,711,714,714,718,720,727,727,744,744,746,746,751,751,753,754,756,756,763,763,766,768,776,776,778,778,781,781,788,799,809,812,816,816,820,821,826,827,832,833,837,840,843,854,859,860,862,873,876,876,880,880,885,886,888,888,890,890,892,892,897,897,899,899,905,909,911,911,913,914,917,917,920,920,922,928,934,937,940,945,948,948,964,964,983,983,996,997,1008,1011,1018,1018,1020,1028,1046,1047,1076,1077,1116,1117,1121,1125,1131,1131,1154,1159,1161,1163,1166,1174,1182,1184,1186,1186,1189,1190,1192,1198,1200,1204,1207,1207,1211,1211,1213,1216,1218,1220,1254,1254,1258,1259,1263,1266,1270,1270,1272,1273,1275,1276,1279,1280,1282,1282,1287,1287,1292,1292,1296,1300,1302,1304,1306,1306,1310,1315,1317,1319,1350,1351,1354,1355,1359,1360,1363,1364,1366,1372,1374,1374,1376,1380,1382,1389,1391,1392,1394,1398,1403,1406,1411,1425,1427,1427,1429,1433,1435,1436,1438,1438,1440,1440,1443,1449,1454,1455,1457,1462,1465,1465,1469,1469,1472,1473,1479,1486,1488,1491,1493,1493,1495,1495,1497,1516,1521,1523,1535,1535,1539,1539,1544,1545,1547,1547,1557,1557,1560,1561,1566,1566,1602,1602,1604,1604,1607,1608,1613,1613,1622,1622,1624,1625,1639,1640,1659,1659,1664,1664,1677,1680,1684,1684,1713,1722,1726,1728,1730,1761,1764,1764,1766,1770,1772,1772,1774,1778,1780,1780,1782,1832,1835,1836,1839,1840,1843,1846,1849,1850,1852,1854,1893,1893,1895,1897,1899,1914,1917,1917,1925,1930,1933,1938,1943,1945,1948,1948,1951,1951,1955,1955,1957,1961,1965,1965,1969,1969,1973,1976,1978,1986,1988,1988,1990,1994,1996,2000,2011,2018,2020,2021,2023,2030,2032,2048,2051,2059,2064,2067,2069,2069,2072,2075,2077,2081,2084,2084,2087,2089,2092,2092,2098,2100,2105,2110,2112,2112,2114,2114,2117,2117,2119,2134,2137,2153,2156,2156,2158,2160,2163,2170,2172,2173,2175,2184,2186,2186,2189,2189,2194,2222,2224,2227,2230,2238,2240,2241,2243,2246,2248,2249,2254,2260,2262,2268,2271,2271,2273,2278,2280,2284,2291,2292,2299,2303,2305,2312,2314,2317,2326,2327,2361,2362,2364,2364,2366,2367,2369,2377,2379,2381,2383,2403,2410,2410,2417,2429,2431,2432,2434,2435,2437,2438,2440,2446,2448,2448,2451,2451,2463,2465,2467,2475,2478,2511,2520,2535,2543,2543,2545,2547,2549,2552,2557,2559,2562,2562,2564,2580,2582,2588,2612,2618,2620,2624,2632,2632,2635,2635,2642,2656,2664,2664,2690,2691,2694,2695,2703,2711,2714,2718,2721,2721,2754,2754,2763,2766,2773,2774,2777,2778,2780,2783,2785,2787,2800,2805,2807,2827,2844,2845,2847,2854,2857,2857,2864,2870,2877,2879,2884,2884,2898,2908,2910,2913,2915,2923,2933,2933,2941,2955,2957,2995,3000,3008,3011,3011,3015,3015,3018,3028,3036,3042,3044,3079,3103,3109,3111,3111,3128,3128,3131,3131,3135,3137,3145,3145,3147,3154,3158,3161,3166,3166,3184,3217,3219,3219,3221,3232,3235,3235,3242,3247,3260,3263,3267,3296,3302,3315,3319,3336,3341,3342,3344,3346,3350,3351,3359,3368,3370,3370,3373,3381,3392,3392,3398,3398,3400,3400,3413,3417,3419,3424,3426,3433,3435,3437,3439,3440,3442,3447,3449,3455,3457,3459,3461,3463,3469,3469,3471,3475,3479,3485,3487,3494,3511,3511,3522,3529,3532,3549,3555,3563,3565,3567,3569,3572,3578,3579,3581,3583,3585,3600,3602,3603,3606,3607,3641,3656,3661,3661,3687,3687,3694,3699,3719,3719,3732,3733,3738,3743,3747,3761,3763,3765,3774,3774,3778,3817,3822,3822,3833,3837,3840,3856,3865,3865,3883,3896,3902,3902,3933,3959,3961,4015,4017,4026,4030,4033,4035,4052,4054,4055,4057,4084,4086,4091,4107,4140,4190,4197,4237,4237,4239,4239,4242,4244,4246,4264,4290,4290,4302,4303,4307,4336,4343,4344,4362,4362,4368,4369,4372,4373,4379,4379,4381,4381,4383,4383,4385,4385,4393,4393,4430,4430,4434,4434,4436,4439,4442,4449,4454,4456,4462,4465,4474,4474,4476,4478,4504,4505,4507,4509,4511,4511,4534,4535,4543,4543,4545,4545,4547,4550,4560,4571,4574,4577,4614,4614,4616,4616,4642,4643,4652,4653,4657,4701,4704,4738,4741,4741,4743,4746,4750,4750,4760,4768,4771,4774,4777,4778,4781,4782,4785,4786,4788,4790,4792,4800,4810,4812,4815,4818,4820,4822,4824,4833,4835,4838,4840,4840,4853,4858,4861,4861,4899,4902,4906,4917,4919,4925,4928,4929,4931,4940,4942,4944,4946,4951,4954,4956,4958,4959,4961,4965,4967,4980,4982,4985,4987,4991,4993,4994,4996,4996,4998,5005,5007,5011,5016,5016,5028,5029,5031,5037,5039,5040,5053,5053,5069,5071,5079,5079,5090,5094,5106,5112,5180,5183,5187,5187,5191,5202,5207,5216,5222,5222,5226,5226,5229,5231,5235,5236,5238,5250,5252,5262,5266,5267,5274,5328,5337,5337,5340,5341,5343,5347,5351,5351,5355,5358,5379,5379,5387,5387,5392,5395,5398,5399,5404,5405,5408,5411,5419,5420,5422,5423,5425,5426,5443,5444,5458,5459,5491,5491,5495,5495,5502,5502,5516,5516,5522,5522,5532,5532,5540,5542,5545,5546,5548,5561,5579,5581,5586,5587,5589,5593,5595,5600,5604,5618,5622,5622,5624,5627,5629,5630,5739,5739,5742,5757,5761,5761,5766,5767,5770,5770,5776,5783,5812,5815,5817,5822,5828,5828,5856,5856,5870,5870,5936,5936,5939,5941,5943,5944,5953,5954,5956,5958,5961,5971,5975,5976,6036,6036,6040,6040,6058,6063,6070,6070,6076,6076,6078,6078,6084,6085,6087,6088,6092,6098,6116,6131,6134,6144,6147,6148,6171,6171,6173,6174,6176,6177,6179,6180,6182,6182,6185,6189,6191,6191,6194,6206,6214,6215,6219,6220,6223,6243,6254,6256,6263,6264,6266,6269,6282,6282,6314,6315,6318,6324,6327,6327,6331,6337,6340,6341,6350,6350,6360,6360,6365,6367,6378,6389,6392,6400,6402,6434,6440,6440,6447,6449,6459,6461,6463,6463,6465,6469,6472,6473,6477,6478,6480,6482,6502,6515,6517,6521,6523,6528,6531,6531,6536,6543,6545,6618,6622,6622,6627,6633,6641,6642,6651,6651,6659,6660,6664,6671,6673,6682,6685,6698,6707,6709,6711,6711,6713,6713,6719,6733,6737,6752,6757,6757,6773,6774,6780,6780,6784,6784,6786,6798,6801,6804,6806,6806,6828,6837,6886,6886,6896,6896,6898,6911,6946,6946,6953,6953,6966,6985,6998,6998,7000,7005,7026,7027,7046,7066,7094,7095,7106,7113,7115,7118,7120,7120,7129,7130,7132,7133,7166,7167,7169,7171,7187,7189,7229,7230,7248,7248,7276,7277,7280,7285,7297,7299,7326,7332,7334,7342,7344,7344,7348,7359,7366,7370,7373,7375,7377,7378,7386,7387,7390,7391,7406,7424,7426,7427,7429,7441,7443,7448,7454,7463,7465,7497,7506,7515,7517,7559,7606,7612,7673,7673,7677,7677,7682,7691,7706,7714,7717,7731,7734,7734,7736,7736,7738,7739,7746,7761,7786,7787,7809,7809,7826,7826,7888,7888,7913,7922,7924,7961,7963,7963,7996,7997,8006,8006,8071,8071,8080,8086,8088,8094,8106,8135,8137,8144,8156,8163,8174,8216,8223,8226,8245,8320,8345,8350,8367,8367,8624,8626,8688,8688,8708,8708,8746,8755,9042,9042,9239,9239,9243,9243,9285,9292,9333,9333,9359,9359,9362,9362,9366,9366,9372,9372,9375,9398,9400,9420,9422,9435,9444,9450,9452,9459,9461,9461,9465,9465,9467,9467,9469,9470,9473,9492,9508,9522,9527,9527,9531,9531,9533,9536,9538,9538,9588,9588,9598,9605,9607,9609,9622,9627,9630,9666,9678,9680,9682,9687,9698,9706,9718,9718,9742,9974,9998,9999,10001,10004,10006,10011,10018,10021,10023,10049,10052,10113,10118,10282,10287,10289,10298,10299,10328,10333,10358,10359,10362,10391,10399,10413,10421,10423,10455,10455,10461,10462,10499,10504,10506,10506,10508,10508,10510,10510,10515,10515,10518,10518,10542,10545,10547,10547,10549,10550,10553,10555,10567,10568,10570,10574,10578,10578,10581,10584,10588,10588,10591,10591,10596,10596,10611,10619,10623,10638,10652,10659,10685,10686,10696,10698,10700,10711,10721,10721,10724,10724,10726,10726,10739,10751,10756,10756,10758,10758,10760,10772,10774,10788,10795,10808,10820,10821,10823,10829,10833,10833,10835,10838,10842,10847,10878,10878,10898,10898,10919,10919,11019,11019,11021,11021,11025,11025,11041,11042,11086,11087,11118,11118,11120,11124,11170,11170,11187,11187,11189,11196,11199,11201,11229,11229,11262,11265,11287,11290,11302,11308,11310,11311,11314,11314,11317,11317,11321,11323,11342,11345,11364,11365,11369,11369,11383,11383,11411,11411,11424,11424,11469,11469,11475,11475,11502,11502,11505,11506,11508,11508,11522,11522,11542,11542,11585,11589,11591,11591,11603,11608,11623,11629,11631,11635,11662,11662,11665,11665,11669,11669,11675,11675,11677,11679,11684,11686,11702,11703,11722,11722,11726,11726,11728,11731,11735,11735,11743,11750,11755,11755,11762,11768,11782,11787,11802,11803,11805,11805,11807,11812,11814,11817,11819,11824,11832,11832,11838,11842,11847,11876,11882,11882,11884,11884,11888,11889,11902,11902,11904,11911,11913,11913,11915,11936,11945,11946,11962,11965,11967,12002,12004,12032,12034,12036,12038,12059,12061,12066,12082,12083,12102,12115,12142,12142,12182,12183,12185,12185,12187,12189,12221,12222,12225,12225,12243,12245,12247,12260,12282,12282,12285,12285,12290,12290,12294,12299,12304,12304,12322,12322,12328,12329,12331,12333,12338,12338,12344,12344,12348,12348,12400,12400,12403,12403,12405,12410,12413,12429,12442,12443,12446,12449,12452,12454,12456,12456,12461,12466,12468,12471,12482,12482,12502,12502,12522,12523,12527,12528,12531,12532,12535,12535,12542,12557,12582,12584,12587,12593,12602,12606,12608,12621,12624,12626,12628,12629,12631,12634,12636,12637,12639,12641,12651,12651,12653,12653,12686,12686,12709,12709,12742,12752,12754,12757,12764,12764,12767,12767,12769,12769,12772,12777,12779,12779,12781,12784,12786,12788,12790,12798,12801,12802,12805,12805,12846,12846,12850,12870,12882,12883,12889,12890,12892,12893,12895,12895,12901,12905,12926,12927,12929,12937,12939,12941,12943,12945,12947,12953,12959,12972,12974,13085,13087,13139,13141,13148,13150,13150,13160,13171,13173,13173,13175,13175,13177,13179,13181,13185,13198,13199,13203,13206,13208,13214,13216,13222,13242,13246,13248,13249,13252,13255,13257,13262,13282,13286,13290,13293,13312,13312,13314,13316,13318,13319,13336,13341,13344,13346,13348,13349,13353,13353,13358,13361,13368,13369,13371,13376,13378,13409,13472,13475,13498,13498,13502,13502,13504,13505,13515,13516,13524,13535,13537,13539,13544,13544,13586,13586,13602,13612,13622,13623,13625,13625,13627,13632,13698,13701,13705,13723,13726,13751,13753,13753,13762,13809,13811,13812,13814,13814,13816,13825,13854,13871,13894,13900,13919,13919,13922,13925,13936,13938,13944,13944,13950,13969,13982,13984,13986,13986,14002,14002,14022,14025,14042,14045,14082,14134,14136,14154,14157,14226,14228,14255,14257,14337,14340,14340,14363,14380,14382,14394,14397,14465,14475,14475,14487,14487,14502,14503,14522,14522,14524,14525,14527,14528,14531,14539,14541,14541,14543,14543,14545,14545,14548,14555,14557,14609,14611,14612,14614,14618,14620,14624,14626,14626,14629,14629,14631,14633,14636,14638,14640,14643,14652,14678,14680,14707,14722,14730,14742,14871,14873,14893,14895,14983,15003,15019,15045,15096,15104,15200,15202,15207,15210,15276,15278,15289,15291,15291,15294,15313,15322,15327,15329,15406,15411,15411,15413,15413,15418,15418,15421,15421,15424,15445,15449,15453,15455,15563,15565,15585,15587,15687,15689,15695,15697,15698,15702,15709,15782,15784,15786,15787,15789,15789,15791,15792,15794,15797,15799,15802,15804,15815,15822,15825,15827,15827,15853,15867,15873,15873,15887,15895,15903,15907,15909,15910,15912,15912,15918,15918,15925,15947,15962,15991,15995,15995,15999,15999,16004,16004,16007,16009,16022,16022,16026,16031,16033,16039,16058,16067,16116,16165,16172,16172,16211,16213,16309,16309,16315,16315,16334,16337,16340,16342,16345,16345,16367,16367,16369,16370,16391,16407,16409,16580,16582,16582,16604,16608,16622,16623,16658,16661,16664,16664,16666,16741,16768,16769,16788,16789,16791,16868,16873,16873,16886,16887,16889,16891,16894,16894,16897,16966,16975,16975,16977,16990,16992,17007,17013,17016,17039,17047,17050,17050,17054,17055,17061,17061,17063,17078,17082,17082,17102,17113,17123,17123,17142,17142,17182,17190,17192,17193,17223,17223,17282,17283,17342,17343,17382,17383,17462,17463,17482,17482,17508,17508,17523,17523,17562,17625,17686,17688,17690,17692,17694,17695,17704,17705,17707,17707,17710,17711,17713,17715,17717,17719,17721,17721,17723,17723,17728,17728,17730,17730,17732,17734,17736,17746,17748,17755,17759,17759,17766,17770,17772,17780,17782,17783,17802,17802,17900,17909,17922,17922,17942,17943,17982,17982,18002,18002,18022,18023,18043,18044,18047,18048,18062,18062,18082,18083,18102,18104,18122,18123,18161,18168,18202,18205,18208,18208,18238,18238,18263,18263,18282,18282,18289,18289,18293,18293,18295,18296,18298,18298,18301,18328,18337,18355,18366,18400,18402,18411,18413,18413,18419,18421,18424,18425,18427,18430,18432,18432,18434,18445,18447,18473,18475,18486,18490,18491,18493,18500,18502,18511,18520,18538,18541,18547,18582,18586,18596,18596,18602,18602,18608,18612,18634,18634,18637,18639,18644,18644,18646,18646,18665,18665,18671,18674,18676,18684,18686,18686,18689,18702,18709,18713,18715,18718,18720,18723,18725,18730,18732,18745,18747,18747,18754,18765,18800,18801,18803,18803,18805,18817,18820,18838,18840,18840,18842,18879,18881,18882,18948,18948,18951,18951,18957,18957,18968,18968,18970,18971,18982,18986,19014,19015,19019,19019,19022,19022,19024,19024,19028,19028,19031,19032,19037,19044,19047,19053,19056,19059,19065,19065,19083,19149,19156,19160,19162,19170,19184,19201,19214,19214,19226,19226,19287,19290,19292,19295,19302,19303,19308,19315,19321,19321,19323,19325,19334,19337,19339,19407,19426,19428,19430,19439,19455,19457,19485,19491,19502,19623,19662,19662,19682,19695,19697,19697,19742,19743,19760,19760,19762,19763,19808,19812,19822,19849,19852,19857,19859,19859,19861,19871,19873,19879,19884,19901,19903,19910,19912,19913,19915,19930,19944,19959,19961,19970,19972,19972,19979,19993,19998,19999,20003,20003,20005,20006,20032,20039,20041,20061,20068,20073,20082,20083,20086,20086,20088,20146,20149,20220,20238,20242,20245,20252,20255,20255,20257,20292,20294,20309,20311,20336,20338,20363,20368,20370,20372,20372,20380,20380,20391,20392,20406,20408,20412,20412,20417,20417,20425,20431,20434,20434,20437,20446,20460,20460,20468,20468,20476,20481,20487,20488,20502,20505,20512,20512,20517,20517,20521,20525,20529,20530,20534,20534,20536,20539,20549,20551,20556,20556,20561,20575,20577,20600,20615,20619,20621,20643,20645,20650,20652,20675,20680,20707,20710,20724,20738,20738,20814,20814,21039,21040,21101,21102,21115,21129,21134,21135,21154,21154,21157,21157,21178,21190,21192,21192,21196,21210,21242,21242,21244,21244,21268,21269,21272,21273,21275,21276,21278,21278,21286,21286,21311,21312,21316,21320,21322,21322,21326,21326,21329,21339,21343,21357,21359,21362,21364,21368,21370,21370,21372,21376,21387,21435,21437,21437,21439,21507,21516,21518,21520,21527,21529,21532,21538,21539,21541,21544,21549,21551,21553,21555,21563,21568,21572,21573,21579,21588,21594,21594,21596,21627,21635,21635,21639,21639,21645,21645,21647,21648,21650,21652,21663,21710,21712,21713,21715,21715,21782,21782,21794,21806,21809,21810,21814,21814,21836,21839,21856,21856,21888,21891,21994,22011,22013,22013,22015,22017,22060,22093,22095,22102,22106,22113,22149,22150,22191,22191,22194,22199,22204,22208,22210,22213,22215,22215,22223,22223,22225,22225,22230,22232,22234,22234,22240,22242,22245,22245,22247,22247,22253,22257,22266,22282,22301,22306,22311,22311,22313,22319,22321,22322,22325,22337,22339,22343,22345,22348,22377,22380,22383,22385,22391,22391,22394,22412,22416,22431,22433,22433,22436,22443,22458,22458,22464,22472,22476,22483,22488,22519,22589,22589,22596,22596,22630,22632,22651,22652,22654,22673,22676,22676,22678,22678,22680,22681,22688,22691,22699,22702,22707,22707,22709,22709,22711,22716,22718,22718,22720,22722,22724,22725,22730,22732,22736,22736,22738,22738,22740,22742,22744,22745,22747,22753,22756,22764,22798,22821,22843,22843,22852,22852,22855,22860,22862,22865,22867,22870,22872,22887,22935,22943,22947,22947,22954,22954,22960,22961,22967,22968,22981,22981,22983,22983,22988,22988,22994,22994,22999,23001,23004,23006,23009,23009,23014,23014,23017,23021,23023,23023,23025,23025,23027,23051,23053,23054,23056,23073,23075,23075,23078,23078,23081,23082,23084,23085,23087,23093,23124,23129,23132,23132,23139,23139,23156,23156,23168,23171,23173,23173,23177,23178,23192,23192,23197,23201,23203,23203,23206,23207,23219,23221,23226,23226,23237,23238,23242,23244,23251,23264,23272,23319,23323,23324,23328,23328,23356,23356,23369,23369,23451,23456,23464,23469,23557,23558,23570,23570,23577,23577,23582,23583,23663,23668,23705,23705,23709,23710,23714,23714,23716,23716,23743,23743,24071,24071,24222,24222,24358,24358,24418,24418,25818,25818},
