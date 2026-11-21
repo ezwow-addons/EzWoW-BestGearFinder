@@ -1,7 +1,7 @@
-# v2.0.30
+# v2.0.31
 
 ### 한국어
-- 접속 직후 공유용 채널이 공개 채널의 번호(1번)를 차지할 수 있던 문제를 고쳤습니다.
+- 더 많은 장비에 드롭 우두머리와 퀘스트 보상 출처를 보여 줍니다.
 
 ### English
-- Fixed the data-sharing channel possibly taking General's number (1) right after login.
+- Shows the dropping boss and quest reward sources for more gear.
