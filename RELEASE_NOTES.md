@@ -1,9 +1,7 @@
-# v2.0.32
+# v2.0.33
 
 ### 한국어
-- 퀘스트 보상 이름을 갱신했습니다.
-- 게임의 채팅 채널 창을 열 때 "조금 천천히" 경고가 뜨던 문제를 수정했습니다.
+- 아이템 정보가 늦게 들어오면 장비 목록과 검색 결과가 갱신되지 않던 문제를 수정했습니다.
 
 ### English
-- Updated quest reward names.
-- Fixed a "slow down" warning when opening the game's chat channel window.
+- Fixed the gear list and search results not updating when item details arrived late.
