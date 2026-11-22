@@ -272,6 +272,8 @@ end
 local pruneFrame = CreateFrame("Frame")
 pcall(pruneFrame.RegisterEvent, pruneFrame, "PLAYER_ENTERING_WORLD")
 pcall(pruneFrame.RegisterEvent, pruneFrame, "GET_ITEM_INFO_RECEIVED")
+-- (C_Item.RequestLoadItemDataByID answers only with ITEM_DATA_LOAD_RESULT on this client, 2026-11-22)
+pcall(pruneFrame.RegisterEvent, pruneFrame, "ITEM_DATA_LOAD_RESULT")
 pruneFrame:SetScript("OnEvent", function(self, event, itemID)
     if event == "PLAYER_ENTERING_WORLD" then
         self:UnregisterEvent("PLAYER_ENTERING_WORLD")
@@ -280,7 +282,7 @@ pruneFrame:SetScript("OnEvent", function(self, event, itemID)
         else
             pcall(LiveLootLearner.pruneLearnedJunk)
         end
-    elseif event == "GET_ITEM_INFO_RECEIVED" then
+    elseif event == "GET_ITEM_INFO_RECEIVED" or event == "ITEM_DATA_LOAD_RESULT" then
         itemID = LiveLootLearner.unwrapNonSecretValue(itemID)
         if itemID and pendingJunkCheck[itemID] then pcall(LiveLootLearner.pruneJunkEntry, itemID) end
     end

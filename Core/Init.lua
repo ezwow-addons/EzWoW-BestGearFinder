@@ -2265,6 +2265,8 @@ eventFrame:RegisterEvent("PLAYER_LOGIN")
 eventFrame:RegisterEvent("PLAYER_LEVEL_UP")
 eventFrame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
 eventFrame:RegisterEvent("GET_ITEM_INFO_RECEIVED")
+-- (C_Item.RequestLoadItemDataByID answers only with ITEM_DATA_LOAD_RESULT on this client, 2026-11-22)
+pcall(eventFrame.RegisterEvent, eventFrame, "ITEM_DATA_LOAD_RESULT")
 eventFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
 
 pcall(eventFrame.RegisterEvent, eventFrame, "QUEST_TURNED_IN")
@@ -2285,7 +2287,7 @@ eventFrame:SetScript("OnEvent", function(_, event, arg1, arg2)
         C_Timer.After(0.5, function()
             if ns.UpdateLauncher then pcall(ns.UpdateLauncher, ns) end
         end)
-    elseif event == "GET_ITEM_INFO_RECEIVED" then
+    elseif event == "GET_ITEM_INFO_RECEIVED" or event == "ITEM_DATA_LOAD_RESULT" then
         if arg2 == true then
             requested[arg1], attempts[arg1] = nil, nil
             GearScoringEngine.unmarkMissing(arg1)
