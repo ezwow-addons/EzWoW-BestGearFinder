@@ -410,7 +410,7 @@ ns.ForeverExtra = {
         [19484] = { {qid=7162, title="신병 계급장", titleEn="Proving Grounds (Alliance)", lvl=0} },
         [20133] = { {qid=97169, title="다크리버의 위협", side="both", lvl=60, minLevel=58, choice=true}, {qid=8258, title="다크리버의 위협", titleEn="The Darkreaver Menace", side="both", lvl=60, minLevel=58, choice=true} },
         [20134] = { {qid=97169, title="다크리버의 위협", side="both", lvl=60, minLevel=58, choice=true} },
-        [20228] = { {qid=8265, title="Defiler's Advanced Care Package", lvl=45} },
+        [20228] = { {qid=8265, title="고급 파멸단 구급품", titleEn="Defiler's Advanced Care Package", lvl=45} },
         [20229] = { {qid=8263, title="Defiler's Basic Care Package", lvl=0} },
         [20230] = { {qid=8264, title="Defiler's Standard Care Package", lvl=0} },
         [20231] = { {qid=8262, title="Arathor Advanced Care Package", lvl=45} },
