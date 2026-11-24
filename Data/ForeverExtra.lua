@@ -403,7 +403,7 @@ ns.ForeverExtra = {
         [19150] = { {qid=7863, title="Sentinel Basic Care Package", lvl=0} },
         [19151] = { {qid=7864, title="Sentinel Standard Care Package", lvl=0} },
         [19152] = { {qid=7865, title="Sentinel Advanced Care Package", lvl=45} },
-        [19153] = { {qid=7868, title="Outrider Advanced Care Package", lvl=45} },
+        [19153] = { {qid=7868, title="고급 정찰대 구급품", titleEn="Outrider Advanced Care Package", lvl=45} },
         [19154] = { {qid=7866, title="Outrider Basic Care Package", lvl=0} },
         [19155] = { {qid=7867, title="Outrider Standard Care Package", lvl=0} },
         [19483] = { {qid=7161, title="신병 계급장", titleEn="Proving Grounds (Horde)", lvl=0} },
