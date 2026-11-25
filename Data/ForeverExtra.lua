@@ -413,7 +413,7 @@ ns.ForeverExtra = {
         [20228] = { {qid=8265, title="고급 파멸단 구급품", titleEn="Defiler's Advanced Care Package", lvl=45} },
         [20229] = { {qid=8263, title="Defiler's Basic Care Package", lvl=0} },
         [20230] = { {qid=8264, title="Defiler's Standard Care Package", lvl=0} },
-        [20231] = { {qid=8262, title="Arathor Advanced Care Package", lvl=45} },
+        [20231] = { {qid=8262, title="고급 아라소르 구급품", titleEn="Arathor Advanced Care Package", lvl=45} },
         [20233] = { {qid=8260, title="Arathor Basic Care Package", lvl=0} },
         [20236] = { {qid=8261, title="Arathor Standard Care Package", lvl=0} },
         [20709] = { {qid=97237, title="서가에서 골라 담기", titleEn="Shelf Picked", lvl=13} },
