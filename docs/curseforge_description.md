@@ -9,11 +9,11 @@ CurseForge summary (KO): 내 직업·레벨에서 지금 입을 수 있는 최�
 
 Finds the **best gear you can wear right now** for your class and level, slot by slot, and tells you **where it comes from**: dungeon boss and drop chance, profession craft, quest reward or vendor. DPS, healing and tank specs are compared side by side, with the estimated score change versus what you are wearing.
 
-![Gear window](https://raw.githubusercontent.com/qqhrqqhr2/EzWoW-BestGearFinder/master/docs/images/ui_en.png)
+![Gear window](https://raw.githubusercontent.com/ezwow-addons/EzWoW-BestGearFinder/master/docs/images/ui_en.png)
 
-![Settings window](https://raw.githubusercontent.com/qqhrqqhr2/EzWoW-BestGearFinder/master/docs/images/settings_en.png)
+![Settings window](https://raw.githubusercontent.com/ezwow-addons/EzWoW-BestGearFinder/master/docs/images/settings_en.png)
 
-![BiS try-on (in-game, Korean client)](https://raw.githubusercontent.com/qqhrqqhr2/EzWoW-BestGearFinder/master/docs/images/tryon_ko.png)
+![BiS try-on (in-game, Korean client)](https://raw.githubusercontent.com/ezwow-addons/EzWoW-BestGearFinder/master/docs/images/tryon_ko.png)
 
 *In-game screenshots with the addon set to English. The game client is Korean, so game text such as zone, item and spell names stays Korean. Character and player names and chat text are blurred.*
 
@@ -73,11 +73,11 @@ Languages: English, 한국어, Deutsch, Français, Español, Русский, 简
 
 내 직업과 레벨에서 **지금 입을 수 있는 가장 좋은 장비**를 부위별로 찾아 주고, 그 장비가 **어디서 나오는지**(던전 보스 · 드랍률 / 전문기술 제작 / 퀘스트 보상 / 상인 판매) 알려 주는 애드온입니다. 딜 · 힐 · 탱 특성을 나란히 비교하고, 지금 입은 장비보다 얼마나 좋은지(추정 점수 변화 %)도 보여 줍니다.
 
-![추천 장비 창](https://raw.githubusercontent.com/qqhrqqhr2/EzWoW-BestGearFinder/master/docs/images/ui_ko.png)
+![추천 장비 창](https://raw.githubusercontent.com/ezwow-addons/EzWoW-BestGearFinder/master/docs/images/ui_ko.png)
 
-![설정창](https://raw.githubusercontent.com/qqhrqqhr2/EzWoW-BestGearFinder/master/docs/images/settings_ko.png)
+![설정창](https://raw.githubusercontent.com/ezwow-addons/EzWoW-BestGearFinder/master/docs/images/settings_ko.png)
 
-![BiS 착용 보기 (실제 게임 화면)](https://raw.githubusercontent.com/qqhrqqhr2/EzWoW-BestGearFinder/master/docs/images/tryon_ko.png)
+![BiS 착용 보기 (실제 게임 화면)](https://raw.githubusercontent.com/ezwow-addons/EzWoW-BestGearFinder/master/docs/images/tryon_ko.png)
 
 *실제 게임 화면입니다(WoW Forever, 한국어 클라이언트). 캐릭터 · 다른 플레이어 이름과 채팅 내용은 가렸습니다.*
 
